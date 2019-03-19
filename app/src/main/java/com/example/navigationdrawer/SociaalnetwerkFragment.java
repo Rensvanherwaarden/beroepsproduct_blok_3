@@ -8,15 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class SecondFragment extends Fragment {
-
-    View myView;
-
+public class SociaalnetwerkFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView= inflater.inflate(R.layout.drawer_activiteit_layout,container,false);
-        return myView;
-
+        return inflater.inflate(R.layout.fragment_sociaalnetwerk,container,false);
     }
 }
