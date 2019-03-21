@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PersoonFragment()).commit();
                 break;
             case R.id.nav_slideshow:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SociaalnetwerkFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SociaalNetwerkFragment()).commit();
                 break;
 // voor menu items die enkel  iets moeten laten zien
             case R.id.nav_share:

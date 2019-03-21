@@ -16,12 +16,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Sociaal Netwerk"
         android:textAllCaps="true"
         android:textSize="36sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012"
         tools:text="@string/TitelSociaalNetwerk" />
 
     <TextView
@@ -41,80 +45,159 @@
 
     <ImageButton
         android:id="@+id/afb1ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="146dp"
+        android:layout_height="137dp"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_menu_manage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="198dp"
-        tools:srcCompat="@tools:sample/avatars[8]" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417"
+        tools:srcCompat="@drawable/sociaalnetwerk" />
 
     <ImageButton
         android:id="@+id/afb2ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="139dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/kruisje"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="198dp"
-        tools:srcCompat="@tools:sample/avatars[2]" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419"
+        tools:srcCompat="@drawable/interesses" />
 
     <TextView
         android:id="@+id/tekst3TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Sociaal Netwerk Kiezen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/afb1ImageButton"
-        tools:layout_editor_absoluteX="48dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tekst4TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Interesse Kiezen"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/afb2ImageButton"
-        tools:layout_editor_absoluteX="240dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/afb3ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="148dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tekst4TextView"
-        tools:srcCompat="@tools:sample/avatars[3]" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@tools:sample/avatars[3]"
+        tools:srcCompat="@drawable/interesses2" />
 
     <ImageButton
         android:id="@+id/afb4ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="149dp"
+        android:layout_height="137dp"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tekst3TextView"
-        tools:srcCompat="@tools:sample/avatars[5]" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@tools:sample/avatars[5]"
+        tools:srcCompat="@drawable/sociaalnetwerk2" />
 
     <TextView
         android:id="@+id/tekst5TextView"
         android:layout_width="97dp"
         android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Leden Sociaal Netwerk zien"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/afb4ImageButton"
-        tools:layout_editor_absoluteX="78dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tekst6TextView"
         android:layout_width="114dp"
         android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Zien wie dezelfde interesses heeft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/afb3ImageButton"
-        tools:layout_editor_absoluteX="231dp" />
+        app:layout_constraintVertical_bias="0.01" />
+
 </android.support.constraint.ConstraintLayout>
