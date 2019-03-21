@@ -1,17 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_primary_dark">
+    android:background="@color/white">
 
     <TextView
+        android:id="@+id/tekst1TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sociaal Netwerk"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Sociaal Netwerk"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tekst2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Wat wil je doen?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekst1TextView" />
 
+    <ImageButton
+        android:id="@+id/afb1ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="198dp"
+        tools:srcCompat="@tools:sample/avatars[8]" />
 
-</RelativeLayout>
+    <ImageButton
+        android:id="@+id/afb2ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="198dp"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+    <TextView
+        android:id="@+id/tekst3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sociaal Netwerk Kiezen"
+        app:layout_constraintTop_toBottomOf="@+id/afb1ImageButton"
+        tools:layout_editor_absoluteX="48dp" />
+
+    <TextView
+        android:id="@+id/tekst4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Interesse Kiezen"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/afb2ImageButton"
+        tools:layout_editor_absoluteX="240dp" />
+
+    <ImageButton
+        android:id="@+id/afb3ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekst4TextView"
+        tools:srcCompat="@tools:sample/avatars[3]" />
+
+    <ImageButton
+        android:id="@+id/afb4ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekst3TextView"
+        tools:srcCompat="@tools:sample/avatars[5]" />
+
+    <TextView
+        android:id="@+id/tekst5TextView"
+        android:layout_width="97dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Leden Sociaal Netwerk zien"
+        app:layout_constraintTop_toBottomOf="@+id/afb4ImageButton"
+        tools:layout_editor_absoluteX="78dp" />
+
+    <TextView
+        android:id="@+id/tekst6TextView"
+        android:layout_width="114dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:text="Zien wie dezelfde interesses heeft"
+        app:layout_constraintTop_toBottomOf="@+id/afb3ImageButton"
+        tools:layout_editor_absoluteX="231dp" />
+</android.support.constraint.ConstraintLayout>
