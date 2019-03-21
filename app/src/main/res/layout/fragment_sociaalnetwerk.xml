@@ -48,9 +48,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Sociaal Netwerk Kiezen"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton1"
-        app:layout_constraintStart_toStartOf="@+id/imageButton1"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+        app:layout_constraintEnd_toEndOf="@+id/serviImageButton1"
+        app:layout_constraintStart_toStartOf="@+id/serviImageButton1"
+        app:layout_constraintTop_toBottomOf="@+id/serviImageButton1" />
 
     <TextView
         android:id="@+id/tekst4TextView"
@@ -59,9 +59,9 @@
         android:layout_marginTop="8dp"
         android:text="Interesse Kiezen"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+        app:layout_constraintEnd_toEndOf="@+id/serviImageButton2"
+        app:layout_constraintStart_toStartOf="@+id/serviImageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/serviImageButton2" />
 
     <TextView
         android:id="@+id/tekst5TextView"
@@ -69,9 +69,9 @@
         android:layout_height="46dp"
         android:layout_marginTop="8dp"
         android:text="Leden Sociaal Netwerk zien"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintEnd_toEndOf="@+id/serviImageButton3"
+        app:layout_constraintStart_toStartOf="@+id/serviImageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/serviImageButton3" />
 
     <TextView
         android:id="@+id/tekst6TextView"
@@ -79,12 +79,12 @@
         android:layout_height="46dp"
         android:layout_marginTop="8dp"
         android:text="Zien wie dezelfde interesses heeft"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintEnd_toEndOf="@+id/serviImageButton4"
+        app:layout_constraintStart_toStartOf="@+id/serviImageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/serviImageButton4" />
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/serviImageButton1"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="8dp"
@@ -104,7 +104,7 @@
         app:srcCompat="@drawable/sociaalnetwerk" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/serviImageButton2"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="8dp"
@@ -124,7 +124,7 @@
         app:srcCompat="@drawable/interesses" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/serviImageButton3"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="8dp"
@@ -144,7 +144,7 @@
         app:srcCompat="@drawable/sociaalnetwerk2" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/serviImageButton4"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="8dp"
