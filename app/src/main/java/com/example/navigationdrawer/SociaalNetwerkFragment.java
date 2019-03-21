@@ -21,7 +21,7 @@ public class SociaalNetwerkFragment extends Fragment {
         TextView tekst5TextView = (TextView) findViewById(R.id.tekst5TextView);
         TextView tekst6TextView = (TextView) findViewById(R.id.tekst6TextView);
 **/
-      afb1ImageButton = (ImageButton) findViewById(R.id.afb1ImageButton);
+      //afb1ImageButton = (ImageButton) findViewById(R.id.afb1ImageButton);
 
     }
 }
