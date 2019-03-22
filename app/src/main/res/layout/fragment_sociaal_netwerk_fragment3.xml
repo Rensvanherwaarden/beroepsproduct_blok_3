@@ -5,7 +5,151 @@
     android:id="@+id/ConstraintLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SociaalNetwerkFragment3" >
+    tools:context=".SociaalNetwerkFragment3">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/serviButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekst2TextView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/serviIImageButton1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/interesse1" />
+
+            <TextView
+                android:id="@+id/serviITextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basketballen"
+                android:textAllCaps="true" />
+
+            <ImageButton
+                android:id="@+id/serviIImageButton2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/interesse2" />
+
+            <TextView
+                android:id="@+id/serviITextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gezelsschapspellen"
+                android:textAllCaps="true" />
+
+            <ImageButton
+                android:id="@+id/serviIImageButton3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/interesse3" />
+
+            <TextView
+                android:id="@+id/serviITextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bowlen"
+                android:textAllCaps="true" />
+
+            <ImageButton
+                android:id="@+id/serviIImageButton4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/interesse4" />
+
+            <TextView
+                android:id="@+id/serviITextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kamperen"
+                android:textAllCaps="true" />
+
+            <ImageButton
+                android:id="@+id/serviIImageButton5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/interesse5" />
+
+            <TextView
+                android:id="@+id/serviITextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fotografie"
+                android:textAllCaps="true" />
+
+            <ImageButton
+                android:id="@+id/serviIImageButton6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/interesse6" />
+
+            <TextView
+                android:id="@+id/serviITextView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wandelen"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tekst1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/interesses"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tekst2TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tekst2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:text="Kies een interesse"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekst1TextView" />
 
     <Button
         android:id="@+id/serviButton2"
@@ -23,4 +167,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
 </android.support.constraint.ConstraintLayout>
