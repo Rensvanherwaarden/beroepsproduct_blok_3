@@ -10,15 +10,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class SociaalNetwerkFragment2 extends Fragment {
+public class SociaalNetwerkFragment3 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saved) {
-View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment2,container,false);
+        View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment3,container,false);
 
-        Button serviButton1 = (Button) view.findViewById(R.id.serviButton1);
+        Button serviButton2 = (Button) view.findViewById(R.id.serviButton2);
 
-        serviButton1.setOnClickListener(new View.OnClickListener() {
+        serviButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
@@ -27,7 +27,7 @@ View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment2,contain
 
             }
         });
-return view;
+        return view;
 
     }
 
