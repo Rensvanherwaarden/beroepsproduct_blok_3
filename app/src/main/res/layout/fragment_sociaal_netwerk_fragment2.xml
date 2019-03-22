@@ -26,6 +26,21 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/serviSNImageButton1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/sn1" />
+
+            <TextView
+                android:id="@+id/serviSNTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amusementzoekers"
+                android:textAllCaps="true" />
+
+            <ImageButton
                 android:id="@+id/serviSNImageButton2"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -33,13 +48,12 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/sn2" />
 
-            <ImageButton
-                android:id="@+id/serviSNImageButton1"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/sn1" />
+            <TextView
+                android:id="@+id/serviSNTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Levensgenieters"
+                android:textAllCaps="true" />
 
             <ImageButton
                 android:id="@+id/serviSNImageButton3"
@@ -48,15 +62,12 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:src="@drawable/sn3" />
-
-            <ImageButton
-                android:id="@+id/serviSNImageButton5"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/sn5" />
-
+            <TextView
+                android:id="@+id/serviSNTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discodansers"
+                android:textAllCaps="true" />
             <ImageButton
                 android:id="@+id/serviSNImageButton4"
                 android:layout_width="150dp"
@@ -64,7 +75,25 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:src="@drawable/sn4" />
-
+            <TextView
+                android:id="@+id/serviSNTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plantenhouders"
+                android:textAllCaps="true" />
+            <ImageButton
+                android:id="@+id/serviSNImageButton5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/sn5" />
+            <TextView
+                android:id="@+id/serviSNTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liefhebbers van eten"
+                android:textAllCaps="true" />
             <ImageButton
                 android:id="@+id/serviSNImageButton6"
                 android:layout_width="150dp"
@@ -72,6 +101,12 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:src="@drawable/sn6" />
+            <TextView
+                android:id="@+id/serviSNTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tabletgebruikers"
+                android:textAllCaps="true" />
         </LinearLayout>
     </ScrollView>
 
