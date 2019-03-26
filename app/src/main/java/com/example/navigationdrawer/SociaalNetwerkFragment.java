@@ -57,6 +57,6 @@ public class SociaalNetwerkFragment extends Fragment {
 
             }
         });
-        return view; //test
+        return view; //test2
     }
 }
