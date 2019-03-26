@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.squareup.timessquare.CalendarPickerView;
+// import com.squareup.timessquare.CalendarPickerView;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -17,7 +17,7 @@ import java.util.Date;
 
 public class AgendaActivity extends AppCompatActivity {
 
-
+/**
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,4 +54,6 @@ public class AgendaActivity extends AppCompatActivity {
 
 
     }
+}
+    **/
 }
