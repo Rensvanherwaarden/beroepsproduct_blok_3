@@ -14,12 +14,8 @@
             android:title="Agenda" />
         <item
             android:id="@+id/nav_sociaalnetwerk"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_menu_share"
             android:title="Sociaal Netwerk" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
     </group>
 
     <item android:title="Evenement">
@@ -28,10 +24,6 @@
                 android:id="@+id/nav_event"
                 android:icon="@drawable/ic_event"
                 android:title="Event calender" />
-            <item
-                android:id="@+id/nav_sociaal_netwerk"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Sociaal netwerk" />
         </menu>
     </item>
 
