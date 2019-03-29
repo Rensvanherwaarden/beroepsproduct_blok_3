@@ -14,9 +14,7 @@ import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
-
-import com.example.navigationdrawer.Model.serviSociaalNetwerk;
-import com.example.navigationdrawer.serviClient;
+import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
 
 
 public class SociaalNetwerkFragment4 extends Fragment {
@@ -57,7 +55,7 @@ public class SociaalNetwerkFragment4 extends Fragment {
                 new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
-                        Intent toonLeden = new Intent(view.getContext(), snDetail.class);
+                        Intent toonLeden = new Intent(view.getContext(), SociaalNetwerkView1.class);
                          toonLeden.putExtra("com.example.navigationdrawer.LIJST", i);
                          startActivity(toonLeden);
                     }
@@ -72,7 +70,7 @@ public class SociaalNetwerkFragment4 extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment());
+                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment1());
                 fr.commit();
 
             }
