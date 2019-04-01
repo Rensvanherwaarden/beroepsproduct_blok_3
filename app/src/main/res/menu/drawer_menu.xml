@@ -16,22 +16,19 @@
             android:id="@+id/nav_sociaalnetwerk"
             android:icon="@drawable/ic_menu_camera"
             android:title="Sociaal Netwerk" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+
     </group>
 
     <item android:title="Evenement">
         <menu>
             <item
-                android:id="@+id/nav_event"
+                android:id="@+id/nav_event_calander"
                 android:icon="@drawable/ic_event"
-                android:title="Event calender" />
+                android:title="@string/drawer_event_kalender" />
             <item
-                android:id="@+id/nav_sociaal_netwerk"
+                android:id="@+id/nav_beschikbare_event"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Sociaal netwerk" />
+                android:title="@string/drawer_event_beschikbaar" />
         </menu>
     </item>
 
