@@ -8,7 +8,7 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sociaal_netwerk_view2);
+        setContentView(R.layout.view_sociaal_netwerk_2);
         /**
          *
          *
