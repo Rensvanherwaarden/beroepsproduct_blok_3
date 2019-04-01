@@ -5,12 +5,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
+
 public class SociaalNetwerkView2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_sociaal_netwerk_2);
+
+        TextView tekst4TextView = (TextView) findViewById(R.id.tekst4TextView);
+
+        serviSociaalNetwerk sn1 = new  serviSociaalNetwerk("1", "De Biervaten", "Biertap");
+        serviSociaalNetwerk sn2 = new  serviSociaalNetwerk("2", "Bezige Bestuurders","Auto");
+        serviSociaalNetwerk sn3 = new  serviSociaalNetwerk("3", "Dromerige Geldjagers", "Miljonair");
+        serviSociaalNetwerk sn4 = new  serviSociaalNetwerk("4", "Katten Knuffelaars", "Kat");
+        serviSociaalNetwerk sn5 = new  serviSociaalNetwerk("5", "Huppelende Hockeyers", "Hockey");
+        serviSociaalNetwerk sn6 = new  serviSociaalNetwerk("6", "Oer Overlevers", "Expeditie");
+        serviSociaalNetwerk sn7 = new  serviSociaalNetwerk("7", "Facebook Friends", "Facebook");
+        serviSociaalNetwerk sn8 = new  serviSociaalNetwerk("8", "Party Starters", "Party en Co");
 
         /**
          *
@@ -75,6 +88,33 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
                     "\nOp basis van deze gegevens lijkt dit netwerk ons het leukste netwerk voor jou: ....."
 
             );
+
+            if(tekst3TextView.getText().toString().contains(sn1.getSNVoorwaarde())) {
+            tekst4TextView.setText(sn1.getSNNaam());
+            }
+            if(tekst3TextView.getText().toString().contains(sn2.getSNVoorwaarde())) {
+                tekst4TextView.setText(sn2.getSNNaam());
+            }
+            if(tekst3TextView.getText().toString().contains(sn3.getSNVoorwaarde())) {
+                tekst4TextView.setText(sn3.getSNNaam());
+            }
+            if(tekst3TextView.getText().toString().contains(sn4.getSNVoorwaarde())) {
+                tekst4TextView.setText(sn4.getSNNaam());
+            }
+            if(tekst3TextView.getText().toString().contains(sn5.getSNVoorwaarde())) {
+                tekst4TextView.setText(sn5.getSNNaam());
+            }
+            if(tekst3TextView.getText().toString().contains(sn6.getSNVoorwaarde())) {
+                tekst4TextView.setText(sn6.getSNNaam());
+            }
+            if(tekst3TextView.getText().toString().contains(sn7.getSNVoorwaarde())) {
+                tekst4TextView.setText(sn7.getSNNaam());
+            }
+            if(tekst3TextView.getText().toString().contains(sn8.getSNVoorwaarde())) {
+                tekst4TextView.setText(sn8.getSNNaam());
+            }
+
+
 
 
         }
