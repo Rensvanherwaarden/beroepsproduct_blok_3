@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 // voor menu items die enkel  iets moeten laten zien
             case R.id.nav_event_calander:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new 'intevullen agenda'()).commit();
+                setContentView(R.layout.activity_agenda);
                 Toast.makeText(this, "Evenementen Kalender", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_beschikbare_event:
