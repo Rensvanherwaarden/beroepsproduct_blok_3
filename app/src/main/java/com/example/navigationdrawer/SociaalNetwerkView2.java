@@ -1,7 +1,9 @@
 package com.example.navigationdrawer;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class SociaalNetwerkView2 extends AppCompatActivity {
 
@@ -9,6 +11,7 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_sociaal_netwerk_2);
+
         /**
          *
          *
@@ -26,5 +29,56 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
          *
          * Genereren welk sociaal netwerk hierbij past.
          */
+
+
+        Intent i = getIntent();
+        // Als de intent die meegestuurd word een Extra heeft worden textview 4,10 & 12 aangepast naar de meegestuurde data.
+        if (i.hasExtra("ExtraStringQ1")) {
+            TextView tekst3TextView = (TextView) findViewById(R.id.tekst3TextView);
+
+
+            // antwoord1TextView wordt veranderd naar het antwoord wat in spinner2 is ingevuld enz.
+            tekst3TextView.setText("We zullen eens gaan kijken welk sociaal netwerk het beste bij jou past. " +
+
+                    "\nAls jij binnenkomt op een feest ben je als eerste te vinden bij "
+                    + i.getStringExtra("ExtraStringQ1") +
+                    "." +
+
+                    "\nAls jij de loterij wint koop jij "
+                    + i.getStringExtra("ExtraStringQ2") +
+                    "." +
+
+                    "\nJij wilde "
+                    + i.getStringExtra("ExtraStringQ3") +
+                    " worden als je oud was." +
+
+                    "\nJou favoriete huisdier is een "
+                    + i.getStringExtra("ExtraStringQ4")+
+                    "." +
+
+                    "\nDe sport "
+                    + i.getStringExtra("ExtraStringQ5")+
+                    " vind jij het leukst."+
+
+                    "\nOp TV kijk jij graag naar "
+                    + i.getStringExtra("ExtraStringQ6")+
+                    "."+
+
+                    "\nEn op het internet zit je het liefst op "
+                    + i.getStringExtra("ExtraStringQ7")+
+                    "."+
+
+                    "\nTot slot vind jij het bordspel "
+                    + i.getStringExtra("ExtraStringQ8")+
+                    " echt het leukst!"+
+
+                    "\nOp basis van deze gegevens lijkt dit netwerk ons het leukste netwerk voor jou: ....."
+
+            );
+
+
+        }
+
+
     }
 }
