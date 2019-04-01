@@ -18,12 +18,12 @@ public class RensClient {
         this.naam = naam;
     }
 
-    public String getWoongroep() {
+    public String getClient() {
         return id;
     }
 
-    public void setWoongroep(String woongroep) {
-        this.id = woongroep;
+    public void setClient(String client) {
+        this.id = client;
     }
 
 
