@@ -15,7 +15,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "spinnerExample";
     private static final String Cliënten = "labels";
     private static final String COLUMN_ID = "id";
-    private static final String COLUMN_NAME = "name";
+    private static final String COLUMN_NAAM = "name";
+    private static final String COLUMN_WOONPLAATS = "woonplaats";
+    private static final String COLUMN_GEBOORTEDATUM = "geboortedatum";
+    private static final String COLUMN_INTERESSE1 = "interesse1";
+    private static final String COLUMN_INTERESSE2 = "interesse2";
+    private static final String COLUMN_INTERESSE3 = "interesse3";
+    private static final String COlUMN_WACHTWOORD = "wachtwoord";
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -25,7 +31,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 // Category table create query
-        String CREATE_ITEM_TABLE = "CREATE TABLE " + Cliënten + "(" + COLUMN_ID + " INTEGER PRIMARY KEY," + COLUMN_NAME +" TEXT)";
+        String CREATE_ITEM_TABLE = "CREATE TABLE " + Cliënten + "(" + COLUMN_ID + " INTEGER PRIMARY KEY," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+","
+                + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 + "," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD + "TEXT)";
         db.execSQL(CREATE_ITEM_TABLE);
 
     }
@@ -47,7 +54,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(COLUMN_NAME, label);//column name, column value
+        values.put(COLUMN_NAAM, label);//column name, column value
 
 // Inserting Row
         db.insert(Cliënten, null, values);
