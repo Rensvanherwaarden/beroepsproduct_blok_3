@@ -18,25 +18,25 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
 
         final TextView tekst4TextView = (TextView) findViewById(R.id.tekst4TextView);
 
-        serviSociaalNetwerk sn1 = new  serviSociaalNetwerk("1", "De Biervaten", "Biertap");
-        serviSociaalNetwerk sn2 = new  serviSociaalNetwerk("2", "De Dansers", "Dansvloer");
-        serviSociaalNetwerk sn3 = new  serviSociaalNetwerk("3", "De Toiletbezoekers", "WC");
-        serviSociaalNetwerk sn4 = new  serviSociaalNetwerk("4", "De Ouders", "Ouders");
-        serviSociaalNetwerk sn5 = new  serviSociaalNetwerk("5", "De Maatjesmannen", "Vrienden");
-        serviSociaalNetwerk sn6 = new  serviSociaalNetwerk("6", "Automaniaccen", "Auto");
-        serviSociaalNetwerk sn7 = new  serviSociaalNetwerk("7", "Huizenhouders", "Huis");
-        serviSociaalNetwerk sn8 = new  serviSociaalNetwerk("8", "Vakantiegangers", "Vakantie");
-        serviSociaalNetwerk sn9 = new  serviSociaalNetwerk("9", "Gamers", "Spelcomputer");
-        serviSociaalNetwerk sn10 = new  serviSociaalNetwerk("10", "Potentiele miljonairs", "Miljonair");
-        serviSociaalNetwerk sn11 = new  serviSociaalNetwerk("8", "Vakantieganers", "Piloot");
-        serviSociaalNetwerk sn12 = new  serviSociaalNetwerk("2", "De Dansers", "Danser");
-        serviSociaalNetwerk sn13 = new  serviSociaalNetwerk("4", "De Ouders", "Papa");
-        serviSociaalNetwerk sn15 = new  serviSociaalNetwerk("11", "De Hamsteraars", "Hamster");
-        serviSociaalNetwerk sn16 = new  serviSociaalNetwerk("12", "De Waterratten", "Vis");
-        serviSociaalNetwerk sn17 = new  serviSociaalNetwerk("12", "De Waterratten", "Zwemmen");
-        serviSociaalNetwerk sn18 = new  serviSociaalNetwerk("2", "De Dansers", "Dance Dance Dance");
-        serviSociaalNetwerk sn19 = new  serviSociaalNetwerk("13", "De Nieuwslezers", "Nu");
-        serviSociaalNetwerk sn20 = new  serviSociaalNetwerk("13", "De Nieuwslezers", "Telegraaf");
+        serviSociaalNetwerk sn1 = new  serviSociaalNetwerk("1", "De Biervaten", "Biertap", "...");
+        serviSociaalNetwerk sn2 = new  serviSociaalNetwerk("2", "De Dansers", "Dansvloer", "...");
+        serviSociaalNetwerk sn3 = new  serviSociaalNetwerk("3", "De Toiletbezoekers", "WC", "...");
+        serviSociaalNetwerk sn4 = new  serviSociaalNetwerk("4", "De Ouders", "Ouders", "...");
+        serviSociaalNetwerk sn5 = new  serviSociaalNetwerk("5", "De Maatjesmannen", "Vrienden", "...");
+        serviSociaalNetwerk sn6 = new  serviSociaalNetwerk("6", "Automaniaccen", "Auto", "...");
+        serviSociaalNetwerk sn7 = new  serviSociaalNetwerk("7", "Huizenhouders", "Huis", "...");
+        serviSociaalNetwerk sn8 = new  serviSociaalNetwerk("8", "Vakantiegangers", "Vakantie", "...");
+        serviSociaalNetwerk sn9 = new  serviSociaalNetwerk("9", "Gamers", "Spelcomputer", "...");
+        serviSociaalNetwerk sn10 = new  serviSociaalNetwerk("10", "Potentiele miljonairs", "Miljonair", "...");
+        serviSociaalNetwerk sn11 = new  serviSociaalNetwerk("8", "Vakantieganers", "Piloot", "...");
+        serviSociaalNetwerk sn12 = new  serviSociaalNetwerk("2", "De Dansers", "Danser", "...");
+        serviSociaalNetwerk sn13 = new  serviSociaalNetwerk("4", "De Ouders", "Papa", "...");
+        serviSociaalNetwerk sn15 = new  serviSociaalNetwerk("11", "De Hamsteraars", "Hamster", "...");
+        serviSociaalNetwerk sn16 = new  serviSociaalNetwerk("12", "De Waterratten", "Vis", "...");
+        serviSociaalNetwerk sn17 = new  serviSociaalNetwerk("12", "De Waterratten", "Zwemmen", "...");
+        serviSociaalNetwerk sn18 = new  serviSociaalNetwerk("2", "De Dansers", "Dance Dance Dance", "...");
+        serviSociaalNetwerk sn19 = new  serviSociaalNetwerk("13", "De Nieuwslezers", "Nu", "...");
+        serviSociaalNetwerk sn20 = new  serviSociaalNetwerk("13", "De Nieuwslezers", "Telegraaf", "...");
 
 
 

@@ -1,5 +1,6 @@
 package com.example.navigationdrawer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -42,12 +43,12 @@ public class SociaalNetwerkFragment1 extends Fragment {
         serviImageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment4());
-                fr.commit();
+                Intent i = new Intent(v.getContext(), SociaalNetwerkView3.class);
+                startActivity(i);
 
             }
         });
+
 
         return view; //test2
     }

@@ -66,25 +66,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tekst3TextView" />
 
-    <TextView
-        android:id="@+id/tekst4TextView"
+    <Button
+        android:id="@+id/serviButton12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="@+id/serviSpinner11"
-        app:layout_constraintStart_toStartOf="@+id/serviSpinner11"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Krijg meer info over dit netwerk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/serviSpinner11" />
 
-    <Button
-        android:id="@+id/serviButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Informatie over dit netwerk"
-        app:layout_constraintEnd_toEndOf="@+id/tekst4TextView"
-        app:layout_constraintStart_toStartOf="@+id/tekst4TextView"
-        app:layout_constraintTop_toBottomOf="@+id/tekst4TextView" />
 
 </android.support.constraint.ConstraintLayout>

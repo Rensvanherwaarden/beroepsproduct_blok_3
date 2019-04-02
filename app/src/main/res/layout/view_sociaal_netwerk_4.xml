@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SociaalNetwerkView4">
     <TextView
-        android:id="@+id/tekst1TextView"
+        android:id="@+id/tekst11TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -20,13 +20,13 @@
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tekst2TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tekst12TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tekst2TextView"
+        android:id="@+id/tekst12TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="91dp"
@@ -39,29 +39,31 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tekst1TextView" />
-
-    <TextView
-        android:id="@+id/tekst12TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="Sociaalnetwerk"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/tekst2TextView"
-        app:layout_constraintStart_toStartOf="@+id/tekst2TextView"
-        app:layout_constraintTop_toBottomOf="@+id/tekst2TextView" />
+        app:layout_constraintTop_toBottomOf="@+id/tekst11TextView" />
 
     <TextView
         android:id="@+id/tekst13TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Kies hieronder jou aanbevolen netwerk voor meer informatie over het netwerk"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/tekst12TextView"
         app:layout_constraintStart_toStartOf="@+id/tekst12TextView"
         app:layout_constraintTop_toBottomOf="@+id/tekst12TextView" />
 
-
+    <TextView
+        android:id="@+id/tekst14TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekst13TextView" />
 </android.support.constraint.ConstraintLayout>
