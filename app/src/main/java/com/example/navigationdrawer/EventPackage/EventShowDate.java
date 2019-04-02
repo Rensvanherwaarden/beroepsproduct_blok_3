@@ -30,7 +30,7 @@ public class EventShowDate extends AppCompatActivity {
         btngocalendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EventShowDate.this, EventAgendaActivity.class);
+                Intent intent = new Intent(EventShowDate.this, EventCalanderActivity.class);
                 startActivity(intent);
             }
         });

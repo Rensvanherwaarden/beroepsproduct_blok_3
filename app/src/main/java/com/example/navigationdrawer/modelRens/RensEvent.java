@@ -1,4 +1,4 @@
-package com.example.navigationdrawer;
+package com.example.navigationdrawer.modelRens;
 
 public class RensEvent {
     private String Evenementid;
