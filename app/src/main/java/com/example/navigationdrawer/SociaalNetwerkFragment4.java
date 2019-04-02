@@ -1,6 +1,6 @@
 package com.example.navigationdrawer;
 
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,20 +8,12 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.Spinner;
-import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
+
 
 
 public class SociaalNetwerkFragment4 extends Fragment {
     @Nullable
-
-
-    private Spinner serviSpinner1;
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saved) {
 

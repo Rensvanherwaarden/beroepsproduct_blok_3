@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SociaalNetwerkView2">
+    tools:context=".SociaalNetwerkView3">
     <TextView
         android:id="@+id/tekst1TextView"
         android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="90dp"
         android:layout_marginRight="90dp"
-        android:text="Welk netwerk past bij mij?"
+        android:text="Meer info over de netwerken"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,32 +47,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
+        android:text="Kies hieronder jou aanbevolen netwerk voor meer informatie over het netwerk"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/tekst2TextView"
         app:layout_constraintStart_toStartOf="@+id/tekst2TextView"
         app:layout_constraintTop_toBottomOf="@+id/tekst2TextView" />
-
-    <TextView
-        android:id="@+id/tekst4TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textAllCaps="true"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="@+id/tekst2TextView"
-        app:layout_constraintStart_toStartOf="@+id/tekst2TextView"
-        app:layout_constraintTop_toBottomOf="@+id/tekst3TextView" />
-
-    <Button
-        android:id="@+id/serviButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="MEER INFO OVER DE NETWERKEN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tekst4TextView"
-        app:layout_constraintStart_toStartOf="@+id/tekst4TextView"
-        app:layout_constraintTop_toBottomOf="@+id/tekst4TextView" />
 
 </android.support.constraint.ConstraintLayout>

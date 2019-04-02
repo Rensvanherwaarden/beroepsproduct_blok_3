@@ -3,6 +3,8 @@ package com.example.navigationdrawer;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
@@ -14,7 +16,7 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_sociaal_netwerk_2);
 
-        TextView tekst4TextView = (TextView) findViewById(R.id.tekst4TextView);
+        final TextView tekst4TextView = (TextView) findViewById(R.id.tekst4TextView);
 
         serviSociaalNetwerk sn1 = new  serviSociaalNetwerk("1", "De Biervaten", "Biertap");
         serviSociaalNetwerk sn2 = new  serviSociaalNetwerk("2", "De Dansers", "Dansvloer");
@@ -37,7 +39,7 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
         serviSociaalNetwerk sn20 = new  serviSociaalNetwerk("13", "De Nieuwslezers", "Telegraaf");
 
 
-        
+
 
         /**
          *
@@ -163,6 +165,15 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
             }
 
 
+            Button serviButton6 = (Button) findViewById(R.id.serviButton6);
+            serviButton6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(v.getContext(), SociaalNetwerkView3.class);
+                    startActivity(i);
+
+                }
+            });
 
 
 
