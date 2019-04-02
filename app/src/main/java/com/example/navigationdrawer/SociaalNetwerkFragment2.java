@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
 import com.example.navigationdrawer.serviModels.serviInschrijfOpties;
 
 
@@ -18,7 +19,7 @@ public class SociaalNetwerkFragment2 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saved) {
-View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment2,container,false);
+        View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment2, container, false);
 
 // Alle attributen die ik gebruik aanmaken en vinden uit het layout bestand.
         Button serviButton1 = (Button) view.findViewById(R.id.serviButton1);
@@ -106,13 +107,13 @@ View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment2,contain
         serviButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr=getFragmentManager().beginTransaction();
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container, new SociaalNetwerkFragment1());
                 fr.commit();
 
             }
         });
-return view;
+        return view;
 
     }
 

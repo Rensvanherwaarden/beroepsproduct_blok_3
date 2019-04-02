@@ -23,7 +23,7 @@ public class SociaalNetwerkFragment3 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saved) {
-        View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment3,container,false);
+        View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment3, container, false);
 
 
         Button serviButton2 = (Button) view.findViewById(R.id.serviButton2);
@@ -68,7 +68,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
                 "Scrabble", "Party en Co");
 
 
-
 // String Array voor spinner2
         String[] antwoorden = new String[]{
                 q1.getAntwoordoptie1(),
@@ -85,7 +84,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
                 getActivity(), R.layout.support_simple_spinner_dropdown_item, antwoordlijst);
         spinner2ArrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinner2.setAdapter(spinner2ArrayAdapter);
-
 
 
 // String Array voor spinner3 (Q2)
@@ -106,8 +104,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
         spinner3.setAdapter(spinner3ArrayAdapter);
 
 
-
-
         // String Array voor spinner4 (Q3)
         String[] antwoorden3 = new String[]{
                 q3.getAntwoordoptie1(),
@@ -124,8 +120,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
                 getActivity(), R.layout.support_simple_spinner_dropdown_item, antwoordlijst3);
         spinner4ArrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinner4.setAdapter(spinner4ArrayAdapter);
-
-
 
 
         // String Array voor spinner5 (Q4)
@@ -146,7 +140,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
         spinner5.setAdapter(spinner5ArrayAdapter);
 
 
-
         // String Array voor spinner6 (Q5)
         String[] antwoorden5 = new String[]{
                 q5.getAntwoordoptie1(),
@@ -163,7 +156,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
                 getActivity(), R.layout.support_simple_spinner_dropdown_item, antwoordlijst5);
         spinner6ArrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinner6.setAdapter(spinner6ArrayAdapter);
-
 
 
         // String Array voor spinner7 (Q6)
@@ -184,7 +176,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
         spinner7.setAdapter(spinner7ArrayAdapter);
 
 
-
         // String Array voor spinner8 (Q7)
         String[] antwoorden7 = new String[]{
                 q7.getAntwoordoptie1(),
@@ -203,7 +194,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
         spinner8.setAdapter(spinner8ArrayAdapter);
 
 
-
         // String Array voor spinner9 (Q8)
         String[] antwoorden8 = new String[]{
                 q8.getAntwoordoptie1(),
@@ -220,9 +210,6 @@ public class SociaalNetwerkFragment3 extends Fragment {
                 getActivity(), R.layout.support_simple_spinner_dropdown_item, antwoordlijst8);
         spinner9ArrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinner9.setAdapter(spinner9ArrayAdapter);
-
-
-
 
 
         // Wanneer je op button3(VERSTUUR)
@@ -257,7 +244,7 @@ public class SociaalNetwerkFragment3 extends Fragment {
         serviButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr=getFragmentManager().beginTransaction();
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container, new SociaalNetwerkFragment1());
                 fr.commit();
 

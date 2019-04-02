@@ -23,6 +23,5 @@ public class SociaalNetwerkView1 extends AppCompatActivity {
         }
 
 
-
     }
 }

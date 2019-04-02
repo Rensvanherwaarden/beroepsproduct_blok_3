@@ -8,7 +8,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+
 import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -69,9 +71,6 @@ public class SociaalNetwerkView3 extends AppCompatActivity {
         serviSpinner11.setAdapter(spinner11ArrayAdapter);
 
 
-
-
-
         Button serviButton12 = (Button) findViewById(R.id.serviButton12);
         serviButton12.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,5 +83,5 @@ public class SociaalNetwerkView3 extends AppCompatActivity {
             }
         });
 
-        }
+    }
 }

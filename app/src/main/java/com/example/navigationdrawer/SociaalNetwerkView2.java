@@ -18,27 +18,25 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
 
         final TextView tekst4TextView = (TextView) findViewById(R.id.tekst4TextView);
 
-        serviSociaalNetwerk sn1 = new  serviSociaalNetwerk("1", "De Biervaten", "Biertap", "...");
-        serviSociaalNetwerk sn2 = new  serviSociaalNetwerk("2", "De Dansers", "Dansvloer", "...");
-        serviSociaalNetwerk sn3 = new  serviSociaalNetwerk("3", "De Toiletbezoekers", "WC", "...");
-        serviSociaalNetwerk sn4 = new  serviSociaalNetwerk("4", "De Ouders", "Ouders", "...");
-        serviSociaalNetwerk sn5 = new  serviSociaalNetwerk("5", "De Maatjesmannen", "Vrienden", "...");
-        serviSociaalNetwerk sn6 = new  serviSociaalNetwerk("6", "Automaniaccen", "Auto", "...");
-        serviSociaalNetwerk sn7 = new  serviSociaalNetwerk("7", "Huizenhouders", "Huis", "...");
-        serviSociaalNetwerk sn8 = new  serviSociaalNetwerk("8", "Vakantiegangers", "Vakantie", "...");
-        serviSociaalNetwerk sn9 = new  serviSociaalNetwerk("9", "Gamers", "Spelcomputer", "...");
-        serviSociaalNetwerk sn10 = new  serviSociaalNetwerk("10", "Potentiele miljonairs", "Miljonair", "...");
-        serviSociaalNetwerk sn11 = new  serviSociaalNetwerk("8", "Vakantieganers", "Piloot", "...");
-        serviSociaalNetwerk sn12 = new  serviSociaalNetwerk("2", "De Dansers", "Danser", "...");
-        serviSociaalNetwerk sn13 = new  serviSociaalNetwerk("4", "De Ouders", "Papa", "...");
-        serviSociaalNetwerk sn15 = new  serviSociaalNetwerk("11", "De Hamsteraars", "Hamster", "...");
-        serviSociaalNetwerk sn16 = new  serviSociaalNetwerk("12", "De Waterratten", "Vis", "...");
-        serviSociaalNetwerk sn17 = new  serviSociaalNetwerk("12", "De Waterratten", "Zwemmen", "...");
-        serviSociaalNetwerk sn18 = new  serviSociaalNetwerk("2", "De Dansers", "Dance Dance Dance", "...");
-        serviSociaalNetwerk sn19 = new  serviSociaalNetwerk("13", "De Nieuwslezers", "Nu", "...");
-        serviSociaalNetwerk sn20 = new  serviSociaalNetwerk("13", "De Nieuwslezers", "Telegraaf", "...");
-
-
+        serviSociaalNetwerk sn1 = new serviSociaalNetwerk("1", "De Biervaten", "Biertap", "...");
+        serviSociaalNetwerk sn2 = new serviSociaalNetwerk("2", "De Dansers", "Dansvloer", "...");
+        serviSociaalNetwerk sn3 = new serviSociaalNetwerk("3", "De Toiletbezoekers", "WC", "...");
+        serviSociaalNetwerk sn4 = new serviSociaalNetwerk("4", "De Ouders", "Ouders", "...");
+        serviSociaalNetwerk sn5 = new serviSociaalNetwerk("5", "De Maatjesmannen", "Vrienden", "...");
+        serviSociaalNetwerk sn6 = new serviSociaalNetwerk("6", "Automaniaccen", "Auto", "...");
+        serviSociaalNetwerk sn7 = new serviSociaalNetwerk("7", "Huizenhouders", "Huis", "...");
+        serviSociaalNetwerk sn8 = new serviSociaalNetwerk("8", "Vakantiegangers", "Vakantie", "...");
+        serviSociaalNetwerk sn9 = new serviSociaalNetwerk("9", "Gamers", "Spelcomputer", "...");
+        serviSociaalNetwerk sn10 = new serviSociaalNetwerk("10", "Potentiele miljonairs", "Miljonair", "...");
+        serviSociaalNetwerk sn11 = new serviSociaalNetwerk("8", "Vakantieganers", "Piloot", "...");
+        serviSociaalNetwerk sn12 = new serviSociaalNetwerk("2", "De Dansers", "Danser", "...");
+        serviSociaalNetwerk sn13 = new serviSociaalNetwerk("4", "De Ouders", "Papa", "...");
+        serviSociaalNetwerk sn15 = new serviSociaalNetwerk("11", "De Hamsteraars", "Hamster", "...");
+        serviSociaalNetwerk sn16 = new serviSociaalNetwerk("12", "De Waterratten", "Vis", "...");
+        serviSociaalNetwerk sn17 = new serviSociaalNetwerk("12", "De Waterratten", "Zwemmen", "...");
+        serviSociaalNetwerk sn18 = new serviSociaalNetwerk("2", "De Dansers", "Dance Dance Dance", "...");
+        serviSociaalNetwerk sn19 = new serviSociaalNetwerk("13", "De Nieuwslezers", "Nu", "...");
+        serviSociaalNetwerk sn20 = new serviSociaalNetwerk("13", "De Nieuwslezers", "Telegraaf", "...");
 
 
         /**
@@ -82,85 +80,85 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
                     " worden als je oud was." +
 
                     "\nJou favoriete huisdier is een "
-                    + i.getStringExtra("ExtraStringQ4")+
+                    + i.getStringExtra("ExtraStringQ4") +
                     "." +
 
                     "\nDe sport "
-                    + i.getStringExtra("ExtraStringQ5")+
-                    " vind jij het leukst."+
+                    + i.getStringExtra("ExtraStringQ5") +
+                    " vind jij het leukst." +
 
                     "\nOp TV kijk jij graag naar "
-                    + i.getStringExtra("ExtraStringQ6")+
-                    "."+
+                    + i.getStringExtra("ExtraStringQ6") +
+                    "." +
 
                     "\nEn op het internet zit je het liefst op "
-                    + i.getStringExtra("ExtraStringQ7")+
-                    "."+
+                    + i.getStringExtra("ExtraStringQ7") +
+                    "." +
 
                     "\nTot slot vind jij het bordspel "
-                    + i.getStringExtra("ExtraStringQ8")+
-                    " echt het leukst!"+
+                    + i.getStringExtra("ExtraStringQ8") +
+                    " echt het leukst!" +
 
                     "\nOp basis van deze gegevens lijkt dit netwerk ons het leukste netwerk voor jou: ....."
 
             );
 
-            if(tekst3TextView.getText().toString().contains(sn1.getSNVoorwaarde())) {
-            tekst4TextView.setText(sn1.getSNNaam());
+            if (tekst3TextView.getText().toString().contains(sn1.getSNVoorwaarde())) {
+                tekst4TextView.setText(sn1.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn2.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn2.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn2.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn3.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn3.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn3.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn4.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn4.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn4.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn5.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn5.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn5.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn6.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn6.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn6.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn7.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn7.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn7.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn8.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn8.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn8.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn9.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn9.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn9.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn10.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn10.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn10.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn11.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn11.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn11.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn12.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn12.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn12.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn13.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn13.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn13.getSNNaam());
             }
 
-            if(tekst3TextView.getText().toString().contains(sn15.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn15.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn15.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn16.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn16.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn16.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn17.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn17.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn17.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn18.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn18.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn18.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn19.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn19.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn19.getSNNaam());
             }
-            if(tekst3TextView.getText().toString().contains(sn20.getSNVoorwaarde())) {
+            if (tekst3TextView.getText().toString().contains(sn20.getSNVoorwaarde())) {
                 tekst4TextView.setText(sn20.getSNNaam());
             }
 
@@ -174,7 +172,6 @@ public class SociaalNetwerkView2 extends AppCompatActivity {
 
                 }
             });
-
 
 
         }
