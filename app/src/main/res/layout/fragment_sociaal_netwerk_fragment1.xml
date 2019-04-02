@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Waarom een sociaal netwerk?"
+        android:text="Meer informatie over een sociaal netwerk."
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/serviImageButton3"
         app:layout_constraintStart_toStartOf="@+id/serviImageButton3"
