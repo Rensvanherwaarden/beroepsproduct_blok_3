@@ -1,26 +1,19 @@
 package com.example.navigationdrawer.modelRens;
 
 public class RensEvent {
-    private String Evenementid;
+
     private String EvenementNaam;
     private String EvenementBeschrijving;
     private String EvenementDatum;
 
 
-    public RensEvent(String id, String naam, String beschrijving, String Datum) {
-        this.Evenementid = id;
+    public RensEvent(String naam, String beschrijving, String Datum) {
+
         this.EvenementNaam = naam;
         this.EvenementBeschrijving = beschrijving;
         this.EvenementDatum = Datum;
     }
 
-    public String getEvenementid() {
-        return Evenementid;
-    }
-
-    public void setEvenementid(String evenementid) {
-        Evenementid = evenementid;
-    }
 
     public String getEvenementNaam() {
         return EvenementNaam;
