@@ -11,7 +11,7 @@ public class serviSociaalNetwerk {
      * @param SNID : De ID van het sociale netwerk.
      * @param SNNaam: De naam van het betreffende sociale netwerk
      * @param SNVoorwaarde: De voorwaarde die moet staan om voorgesteld te worden
-     *                    
+     *
      */
 
     public serviSociaalNetwerk(String SNID, String SNNaam, String SNVoorwaarde){
