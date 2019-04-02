@@ -86,7 +86,7 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
 // loading spinner with newly added data
                     loadSpinnerData();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Kies alstublieft een naam", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Vul alstublieft de bovenstaande vakken in", Toast.LENGTH_SHORT).show();
                 }
             }
         });

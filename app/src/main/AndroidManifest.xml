@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dataJeremy.inlogscherm"></activity>
-        <activity android:name=".dataJeremy.invoerendatajeremy"></activity>
-
+        <activity android:name=".dataJeremy.uitlezendatajeremy"></activity>
+        <activity android:name=".dataJeremy.inlogscherm" />
+        <activity android:name=".dataJeremy.invoerendatajeremy" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
