@@ -1,4 +1,4 @@
-package com.example.navigationdrawer;
+package com.example.navigationdrawer.EventPackage;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -19,7 +19,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class AgendaActivity extends AppCompatActivity {
+public class EventAgendaActivity extends AppCompatActivity {
 
     CompactCalendarView compactCalendar;
     private SimpleDateFormat dateFormatMonth= new SimpleDateFormat("MMMM-yyyy", Locale.getDefault());

@@ -6,8 +6,6 @@ import android.support.annotation.NonNull;
 
 import android.support.design.widget.NavigationView;
 
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,6 +14,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import android.widget.Toast;
+
+import com.example.navigationdrawer.EventPackage.EventAgendaFragment;
+import com.example.navigationdrawer.EventPackage.EventInfoFragment;
+import com.example.navigationdrawer.EventPackage.EventMenu;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -48,25 +50,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             // voor menu items die geselecteerd blijven als je er op klikt
 
             case R.id.nav_persoon:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AgendaFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventAgendaFragment()).commit();
                 break;
-            case R.id.nav_agenda:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PersoonFragment()).commit();
+
+            case R.id.nav_Event:
+                Toast.makeText(this, "Evenementen", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventMenu()).commit();
                 break;
 
             case R.id.nav_sociaalnetwerk:
+
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SociaalNetwerkFragment()).commit();
                 break;
 
 // voor menu items die enkel  iets moeten laten zien
-            case R.id.nav_event_calander:
-                setContentView(R.layout.activity_agenda);
-                Toast.makeText(this, "Evenementen Kalender", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_beschikbare_event:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventInfoFragment()).commit();
-                Toast.makeText(this, "Beschikbare Evenementen", Toast.LENGTH_SHORT).show();
-                break;
+
+
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;

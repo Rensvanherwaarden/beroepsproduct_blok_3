@@ -42,32 +42,32 @@
         app:layout_constraintTop_toBottomOf="@+id/tekst1TextView" />
 
     <TextView
-        android:id="@+id/tekst3TextView"
+        android:id="@+id/textbutton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Sociaal Netwerk Kiezen"
+        android:text="Event Agenda"
         app:layout_constraintEnd_toEndOf="@+id/rensImageButton1"
         app:layout_constraintStart_toStartOf="@+id/rensImageButton1"
         app:layout_constraintTop_toBottomOf="@+id/rensImageButton1" />
 
     <TextView
-        android:id="@+id/tekst4TextView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Interesse Kiezen"
+        android:text="Beschikbare Events"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/zelfdeid"
-        app:layout_constraintStart_toStartOf="@+id/zelfdeid"
-        app:layout_constraintTop_toBottomOf="@+id/zelfdeid" />
+        app:layout_constraintEnd_toEndOf="@+id/rensImageButton2"
+        app:layout_constraintStart_toStartOf="@+id/rensImageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/rensImageButton2" />
 
     <TextView
         android:id="@+id/tekst5TextView"
         android:layout_width="94dp"
         android:layout_height="46dp"
         android:layout_marginTop="8dp"
-        android:text="Leden Sociaal Netwerk zien"
+        android:text="Events Zoeken"
         app:layout_constraintEnd_toEndOf="@+id/rensImageButton3"
         app:layout_constraintStart_toStartOf="@+id/rensImageButton3"
         app:layout_constraintTop_toBottomOf="@+id/rensImageButton3" />
@@ -77,7 +77,7 @@
         android:layout_width="116dp"
         android:layout_height="46dp"
         android:layout_marginTop="8dp"
-        android:text="Zien wie dezelfde interesses heeft"
+        android:text="-"
         app:layout_constraintEnd_toEndOf="@+id/serviImageButton4"
         app:layout_constraintStart_toStartOf="@+id/serviImageButton4"
         app:layout_constraintTop_toBottomOf="@+id/serviImageButton4" />
@@ -103,7 +103,7 @@
         app:srcCompat="@drawable/sociaalnetwerk" />
 
     <ImageButton
-        android:id="@+id/zelfdeid"
+        android:id="@+id/rensImageButton2"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="8dp"

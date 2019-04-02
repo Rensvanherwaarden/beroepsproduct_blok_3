@@ -9,27 +9,14 @@
             android:icon="@drawable/ic_person"
             android:title="Persoon" />
         <item
-            android:id="@+id/nav_agenda"
-            android:icon="@drawable/ic_calander"
-            android:title="Agenda" />
+            android:id="@+id/nav_Event"
+            android:icon="@drawable/ic_event"
+            android:title="Evenementen" />
         <item
             android:id="@+id/nav_sociaalnetwerk"
             android:icon="@drawable/ic_menu_camera"
             android:title="Sociaal Netwerk" />
 
     </group>
-
-    <item android:title="Evenement">
-        <menu>
-            <item
-                android:id="@+id/nav_event_calander"
-                android:icon="@drawable/ic_event"
-                android:title="@string/drawer_event_kalender" />
-            <item
-                android:id="@+id/nav_beschikbare_event"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/drawer_event_beschikbaar" />
-        </menu>
-    </item>
 
 </menu>

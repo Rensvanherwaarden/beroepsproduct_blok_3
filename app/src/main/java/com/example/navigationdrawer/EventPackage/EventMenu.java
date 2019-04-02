@@ -1,4 +1,4 @@
-package com.example.navigationdrawer;
+package com.example.navigationdrawer.EventPackage;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,44 +9,50 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-public class SociaalNetwerkFragment extends Fragment {
+import com.example.navigationdrawer.R;
+import com.example.navigationdrawer.SociaalNetwerkFragment2;
+import com.example.navigationdrawer.SociaalNetwerkFragment3;
+import com.example.navigationdrawer.SociaalNetwerkFragment4;
+import com.example.navigationdrawer.SociaalNetwerkFragment5;
+
+public class EventMenu extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saved) {
         View view = inflater.inflate(R.layout.fragment_sociaal_netwerk,container,false);
-        ImageButton serviImageButton1 = (ImageButton) view.findViewById(R.id.rensImageButton1);
-        ImageButton serviImageButton2 = (ImageButton) view.findViewById(R.id.zelfdeid);
-        ImageButton serviImageButton3 = (ImageButton) view.findViewById(R.id.rensImageButton3);
-        ImageButton serviImageButton4 = (ImageButton) view.findViewById(R.id.serviImageButton4);
+        ImageButton rensImageButton1 = (ImageButton) view.findViewById(R.id.rensImageButton1);
+        ImageButton rensImageButton2 = (ImageButton) view.findViewById(R.id.zelfdeid);
+        ImageButton rensImageButton3 = (ImageButton) view.findViewById(R.id.rensImageButton3);
+        ImageButton rensImageButton4 = (ImageButton) view.findViewById(R.id.serviImageButton4);
 
-        serviImageButton1.setOnClickListener(new View.OnClickListener() {
+        rensImageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment2());
+                fr.replace(R.id.fragment_container, new EventAgendaFragment());
                 fr.commit();
 
             }
         });
-        serviImageButton2.setOnClickListener(new View.OnClickListener() {
+        rensImageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment3());
+                fr.replace(R.id.fragment_container, new EventList());
                 fr.commit();
 
             }
         });
-        serviImageButton3.setOnClickListener(new View.OnClickListener() {
+        rensImageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment4());
+                fr.replace(R.id.fragment_container, new EventInfoFragment());
                 fr.commit();
 
             }
         });
-        serviImageButton4.setOnClickListener(new View.OnClickListener() {
+        rensImageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
