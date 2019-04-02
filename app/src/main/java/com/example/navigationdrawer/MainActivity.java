@@ -15,8 +15,6 @@ import android.view.MenuItem;
 
 import android.widget.Toast;
 
-import com.example.navigationdrawer.EventPackage.EventAgendaFragment;
-import com.example.navigationdrawer.EventPackage.EventInfoFragment;
 import com.example.navigationdrawer.EventPackage.EventMenu;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -50,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             // voor menu items die geselecteerd blijven als je er op klikt
 
             case R.id.nav_persoon:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventAgendaFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventMenu()).commit();
                 break;
 
             case R.id.nav_Event:

@@ -78,9 +78,9 @@
         android:layout_height="46dp"
         android:layout_marginTop="8dp"
         android:text="Zien wie dezelfde interesses heeft"
-        app:layout_constraintEnd_toEndOf="@+id/serviImageButton4"
-        app:layout_constraintStart_toStartOf="@+id/serviImageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/serviImageButton4" />
+        app:layout_constraintEnd_toEndOf="@+id/rensImageButton4"
+        app:layout_constraintStart_toStartOf="@+id/rensImageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/rensImageButton4" />
 
     <ImageButton
         android:id="@+id/rensImageButton1"
@@ -143,7 +143,7 @@
         app:srcCompat="@drawable/sociaalnetwerk2" />
 
     <ImageButton
-        android:id="@+id/serviImageButton4"
+        android:id="@+id/rensImageButton4"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="8dp"

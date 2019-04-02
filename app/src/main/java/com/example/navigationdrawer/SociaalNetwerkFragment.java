@@ -17,7 +17,7 @@ public class SociaalNetwerkFragment extends Fragment {
         ImageButton serviImageButton1 = (ImageButton) view.findViewById(R.id.rensImageButton1);
         ImageButton serviImageButton2 = (ImageButton) view.findViewById(R.id.zelfdeid);
         ImageButton serviImageButton3 = (ImageButton) view.findViewById(R.id.rensImageButton3);
-        ImageButton serviImageButton4 = (ImageButton) view.findViewById(R.id.serviImageButton4);
+        ImageButton serviImageButton4 = (ImageButton) view.findViewById(R.id.rensImageButton4);
 
         serviImageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
