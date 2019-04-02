@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "spinnerExample";
+    private static final String DATABASE_NAME = "Cliënten";
     private static final String Cliënten = "labels";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_NAAM = "name";
@@ -50,11 +50,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     /*
     Inserting new lable into lables table
     */
-    public void insertLabel(String label){
+    public void insertLabel(String label, String label1, String label2, String label3, String label4, String label5){
         SQLiteDatabase db = this.getWritableDatabase();
-
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAAM, label);//column name, column value
+        values.put(COLUMN_GEBOORTEDATUM, label1);
+        values.put(COLUMN_WOONPLAATS, label2);
+        values.put(COLUMN_INTERESSE1, label3);
+        values.put(COLUMN_INTERESSE2, label4);
+        values.put(COLUMN_INTERESSE3, label5);
 
 // Inserting Row
         db.insert(Cliënten, null, values);
@@ -63,12 +67,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 // Closing database connection
     }
 
+
     /*
     Getting all labels
     returns list of labels
     */
     public List getAllLabels(){
         List listjeremy = new ArrayList();
+
+
 
 // Select All Query
         String selectQuery = "SELECT * FROM " + Cliënten;

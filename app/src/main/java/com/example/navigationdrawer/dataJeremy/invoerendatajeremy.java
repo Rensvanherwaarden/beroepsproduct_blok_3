@@ -25,6 +25,13 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
     Spinner spinnerjeremy;
     Button btnAddjeremy;
     EditText inputLabeljeremy;
+    EditText inputLabeljeremy2;
+    EditText inputLabeljeremy3;
+    EditText inputLabeljeremy4;
+    EditText inputLabeljeremy5;
+    EditText inputLabeljeremy6;
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,6 +41,12 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
         spinnerjeremy = findViewById(R.id.spinnerjeremy);
         btnAddjeremy = findViewById(R.id.buttonjeremy);
         inputLabeljeremy = findViewById(R.id.editTextnaamjeremy);
+        inputLabeljeremy2 = findViewById(R.id.editTextgeboortedatumjeremy);
+        inputLabeljeremy3 = findViewById(R.id.editTextwoonplaatsjeremy);
+        inputLabeljeremy4 = findViewById(R.id.editTextinteresse1jeremy);
+        inputLabeljeremy5 = findViewById(R.id.editTextinteresse2jeremy);
+        inputLabeljeremy6 = findViewById(R.id.editTextinteresse3jeremy);
+
 
         spinnerjeremy.setOnItemSelectedListener(this);
 
@@ -45,13 +58,25 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
             @Override
             public void onClick(View arg0) {
                 String label = inputLabeljeremy.getText().toString();
+                String label1 = inputLabeljeremy2.getText().toString();
+                String label2 = inputLabeljeremy2.getText().toString();
+                String label3 = inputLabeljeremy2.getText().toString();
+                String label4 = inputLabeljeremy2.getText().toString();
+                String label5 = inputLabeljeremy2.getText().toString();
 
                 if (label.trim().length() > 0) {
                     DatabaseHandler db = new DatabaseHandler(getApplicationContext());
-                    db.insertLabel(label);
+                    db.insertLabel(label, label1, label2, label3, label4, label5);
+
 
 // making input filed text to blank
                     inputLabeljeremy.setText("");
+                    inputLabeljeremy2.setText("");
+                    inputLabeljeremy3.setText("");
+                    inputLabeljeremy4.setText("");
+                    inputLabeljeremy5.setText("");
+                    inputLabeljeremy6.setText("");
+
 
 // Hiding the keyboard
                     InputMethodManager imm = (InputMethodManager)
@@ -61,7 +86,7 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
 // loading spinner with newly added data
                     loadSpinnerData();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Please enter label name", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Kies alstublieft een naam", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -92,7 +117,7 @@ Function to load the spinner data from SQLite database
         String label = parent.getItemAtPosition(position).toString();
 
 // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "You selected: " + label,
+        Toast.makeText(parent.getContext(), "Je koos: " + label,
                 Toast.LENGTH_LONG).show();
     }
 
