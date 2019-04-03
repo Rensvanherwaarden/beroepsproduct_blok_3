@@ -16,7 +16,7 @@ public class EventMenu extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saved) {
-        View view = inflater.inflate(R.layout.eventmenu, container, false);
+        View view = inflater.inflate(R.layout.activity_event_menu, container, false);
         ImageButton rensImageButton1 = (ImageButton) view.findViewById(R.id.rensImageButton1);
         ImageButton rensImageButton2 = (ImageButton) view.findViewById(R.id.rensImageButton2);
         ImageButton rensImageButton3 = (ImageButton) view.findViewById(R.id.rensImageButton3);
