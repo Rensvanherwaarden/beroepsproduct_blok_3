@@ -2,6 +2,8 @@ package com.example.navigationdrawer.dataJeremy;
 
 
 
+
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -105,3 +107,4 @@ Function to load the spinner data from SQLite database
 // TODO Auto-generated method stub
     }
 }
+

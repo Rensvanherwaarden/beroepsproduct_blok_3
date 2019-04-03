@@ -50,7 +50,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     /*
     Inserting new lable into lables table
     */
-    public void insertLabel(String label, String label1, String label2, String label3, String label4, String label5, String label6){
+    public void insertLabel(String label, String label1, String label2, String label3, String label4, String label5){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAAM, label);//column name, column value
@@ -59,7 +59,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(COLUMN_INTERESSE1, label3);
         values.put(COLUMN_INTERESSE2, label4);
         values.put(COLUMN_INTERESSE3, label5);
-        values.put(COlUMN_WACHTWOORD, label6);
+
 // Inserting Row
         db.insert(Cliënten, null, values);
 //tableName, nullColumnHack, CotentValues

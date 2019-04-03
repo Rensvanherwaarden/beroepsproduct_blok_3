@@ -10,8 +10,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.example.navigationdrawer.R;
-import com.github.sundeepk.compactcalendarview.CompactCalendarView;
-import com.github.sundeepk.compactcalendarview.domain.Event;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -20,7 +18,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class AgendaActivity extends AppCompatActivity {
-
+/**
     CompactCalendarView compactCalendar;
     private SimpleDateFormat dateFormatMonth= new SimpleDateFormat("MMMM-yyyy", Locale.getDefault());
 
@@ -72,4 +70,6 @@ public class AgendaActivity extends AppCompatActivity {
     }
 
 
+}
+*/
 }
