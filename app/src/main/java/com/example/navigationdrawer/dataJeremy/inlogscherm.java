@@ -73,9 +73,6 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
 
     }
 
-/*
-Function to load the spinner data from SQLite database
-*/
 
     private void loadSpinnerData() {
         DatabaseHandler db = new DatabaseHandler(getApplicationContext());
