@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             // voor menu items die geselecteerd blijven als je er op klikt
 
             case R.id.nav_persoon:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AgendaFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PersoonFragment()).commit();
                 break;
             case R.id.nav_agenda:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PersoonFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AgendaFragment()).commit();
                 break;
 
             case R.id.nav_sociaalnetwerk:
