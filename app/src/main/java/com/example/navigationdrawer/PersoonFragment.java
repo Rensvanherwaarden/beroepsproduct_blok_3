@@ -12,6 +12,7 @@ import android.widget.Button;
 
 import com.example.navigationdrawer.dataJeremy.invoerendatajeremy;
 import com.example.navigationdrawer.dataJeremy.uitlezendatajeremy;
+import com.example.navigationdrawer.dataJeremy.inlogscherm;
 
 
 public class PersoonFragment extends Fragment {
@@ -25,7 +26,7 @@ public class PersoonFragment extends Fragment {
         Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), invoerendatajeremy.class);
+                Intent intent = new Intent(v.getContext(), inlogscherm.class);
                 startActivity(intent);
 
             }
@@ -40,6 +41,8 @@ public class PersoonFragment extends Fragment {
 
             }
         });
+
+
 
 
         return view;

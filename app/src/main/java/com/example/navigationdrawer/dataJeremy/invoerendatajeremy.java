@@ -1,6 +1,7 @@
 package com.example.navigationdrawer.dataJeremy;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -88,8 +89,11 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
                 } else {
                     Toast.makeText(getApplicationContext(), "Vul alstublieft de bovenstaande vakken in", Toast.LENGTH_SHORT).show();
                 }
+                Intent intent = new Intent(arg0.getContext(),inlogscherm.class);
+                startActivity(intent);
             }
         });
+
     }
 
 /*
