@@ -16,8 +16,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    private DrawerLayout drawer;
 
+    private DrawerLayout drawer;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        //begin pagina van de applicatie 
+        //begin pagina van de applicatie
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PersoonFragment()).commit();
         navigationView.setCheckedItem(R.id.nav_persoon);
     }
@@ -57,8 +57,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
 // voor menu items die enkel  iets moeten laten zien
-            case R.id.nav_event:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+            case R.id.nav_event_calander:
+                setContentView(R.layout.activity_agenda);
+                Toast.makeText(this, "Evenementen Kalender", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_beschikbare_event:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventInfoFragment()).commit();
+                Toast.makeText(this, "Beschikbare Evenementen", Toast.LENGTH_SHORT).show();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

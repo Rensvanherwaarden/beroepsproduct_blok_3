@@ -15,4 +15,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="terugknop">Terug</string>
     <string name="interesses">Interesses</string>
+
+    //!strings voor de drawer-->
+
+    <string name="drawer_event_kalender"> Evenementen kalender</string>
+    <string name="drawer_event_beschikbaar">Beschikbare events</string>
+
 </resources>
