@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         //begin pagina van de applicatie
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PersoonFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventMenu()).commit();
         navigationView.setCheckedItem(R.id.nav_persoon);
     }
 
@@ -47,9 +47,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId()) {
             // voor menu items die geselecteerd blijven als je er op klikt
 
-            case R.id.nav_persoon:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EventMenu()).commit();
-                break;
+
 
             case R.id.nav_Event:
                 Toast.makeText(this, "Evenementen", Toast.LENGTH_SHORT).show();
@@ -58,8 +56,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.nav_sociaalnetwerk:
 
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SociaalNetwerkFragment1()).commit();
-                break;
 
 // voor menu items die enkel  iets moeten laten zien
 
