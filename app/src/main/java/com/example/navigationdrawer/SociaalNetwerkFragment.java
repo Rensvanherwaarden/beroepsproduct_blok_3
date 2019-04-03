@@ -37,24 +37,7 @@ public class SociaalNetwerkFragment extends Fragment {
 
             }
         });
-        serviImageButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment4());
-                fr.commit();
 
-            }
-        });
-        serviImageButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment5());
-                fr.commit();
-
-            }
-        });
         return view; //test2
     }
 }
