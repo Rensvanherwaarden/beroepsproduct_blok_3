@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".snDetail"></activity>
-        <activity android:name=".EventPackage.EventShowDate"></activity>
-        <activity android:name=".EventPackage.EventCalanderActivity"></activity>
-        <activity android:name=".EventPackage.EventList"></activity>
+        <activity android:name=".EventPackage.EventExtraInfo"></activity>
+        <activity android:name=".snDetail" />
+        <activity android:name=".EventPackage.EventShowDate" />
+        <activity android:name=".EventPackage.EventList" />
+        <activity android:name=".EventPackage.EventCalanderActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

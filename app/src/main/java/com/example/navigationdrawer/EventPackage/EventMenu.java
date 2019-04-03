@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.example.navigationdrawer.R;
-import com.example.navigationdrawer.SociaalNetwerkFragment5;
 
 public class EventMenu extends Fragment {
     @Nullable
@@ -34,7 +33,7 @@ public class EventMenu extends Fragment {
         rensImageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),EventList.class);
+                Intent i = new Intent(v.getContext(), EventList.class);
                 startActivity(i);
 
             }
