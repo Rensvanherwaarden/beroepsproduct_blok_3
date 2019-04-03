@@ -1,18 +1,11 @@
 package com.example.navigationdrawer.dataJeremy;
 
 
-
-
-
 import android.content.Intent;
 import android.os.Bundle;
-
-
 import java.util.List;
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
@@ -47,7 +40,7 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
 
         spinnerinlog.setOnItemSelectedListener(this);
 
-// Loading spinner data from database
+// Laad de spinner met data van de database
         loadSpinnerData();
 
         buttoninlogjeremy.setOnClickListener(new View.OnClickListener() {
@@ -76,10 +69,10 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
 
     private void loadSpinnerData() {
         DatabaseHandler db = new DatabaseHandler(getApplicationContext());
-        List labels = db.getAllLabels();
+        List label3 = db.getAllLabels();
 
 // Creating adapter for spinner
-        ArrayAdapter dataAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, labels);
+        ArrayAdapter dataAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, label3);
 
 // Drop down layout style - list view with radio button
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -91,11 +84,11 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-// On selecting a spinner item
-        String label = parent.getItemAtPosition(position).toString();
+
+        String label3 = parent.getItemAtPosition(position).toString();
 
 
-        Toast.makeText(parent.getContext(), "Je koos: " + label,
+        Toast.makeText(parent.getContext(), "Je koos: " + label3,
                 Toast.LENGTH_LONG).show();
     }
 

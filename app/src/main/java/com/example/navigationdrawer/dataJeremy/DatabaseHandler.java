@@ -61,11 +61,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
 
-    public List getAllLabels(){
+    public List getAllLabels() {
+
+
         List listjeremy = new ArrayList();
 
 
-        String selectQuery = "SELECT * FROM " + Cliënten;
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
 
@@ -83,4 +85,101 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         return listjeremy;
     }
+    public List getcolumnwoonplaats() {
+
+
+        List listjeremy = new ArrayList();
+
+
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
+
+
+        if (cursor.moveToFirst()) {
+            do {
+                listjeremy.add(cursor.getString(3));//adding 2nd column data
+            } while (cursor.moveToNext());
+        }
+
+
+        cursor.close();
+        db.close();
+
+
+        return listjeremy;
+    }
+    public List getcolumngeboortedatum() {
+
+
+        List listjeremy = new ArrayList();
+
+
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
+
+
+        if (cursor.moveToFirst()) {
+            do {
+                listjeremy.add(cursor.getString(4));//adding 2nd column data
+            } while (cursor.moveToNext());
+        }
+
+
+        cursor.close();
+        db.close();
+
+
+        return listjeremy;
+    }
+    public List getinteresse1() {
+
+
+        List listjeremy = new ArrayList();
+
+
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
+
+
+        if (cursor.moveToFirst()) {
+            do {
+                listjeremy.add(cursor.getString(4));//adding 2nd column data
+            } while (cursor.moveToNext());
+        }
+
+
+        cursor.close();
+        db.close();
+
+
+        return listjeremy;
+    }
+    public List getcolumninteresse2() {
+
+
+        List listjeremy = new ArrayList();
+
+
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
+
+
+        if (cursor.moveToFirst()) {
+            do {
+                listjeremy.add(cursor.getString(5));//adding 2nd column data
+            } while (cursor.moveToNext());
+        }
+
+
+        cursor.close();
+        db.close();
+
+
+        return listjeremy;
+    }
+
 }
