@@ -7,7 +7,7 @@
     tools:context=".dataJeremy.inlogscherm">
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerinlog"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextinlog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

@@ -22,8 +22,9 @@ import com.example.navigationdrawer.R;
 
 
 
+
 public class invoerendatajeremy extends AppCompatActivity implements OnItemSelectedListener {
-    Spinner spinnerjeremy;
+    //Spinner spinnerjeremy;
     Button btnAddjeremy;
     EditText inputLabeljeremy;
     EditText inputLabeljeremy2;
@@ -31,6 +32,7 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
     EditText inputLabeljeremy4;
     EditText inputLabeljeremy5;
     EditText inputLabeljeremy6;
+    EditText inputLabeljeremy7;
 
 
 
@@ -39,7 +41,7 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainjeremy);
 
-        spinnerjeremy = findViewById(R.id.spinnerjeremy);
+      //  spinnerjeremy = findViewById(R.id.spinnerjeremy);
         btnAddjeremy = findViewById(R.id.buttonjeremy);
         inputLabeljeremy = findViewById(R.id.editTextnaamjeremy);
         inputLabeljeremy2 = findViewById(R.id.editTextgeboortedatumjeremy);
@@ -47,9 +49,10 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
         inputLabeljeremy4 = findViewById(R.id.editTextinteresse1jeremy);
         inputLabeljeremy5 = findViewById(R.id.editTextinteresse2jeremy);
         inputLabeljeremy6 = findViewById(R.id.editTextinteresse3jeremy);
+        inputLabeljeremy7 = findViewById(R.id.editTextwachtwoordinvoeren);
 
 
-        spinnerjeremy.setOnItemSelectedListener(this);
+        //spinnerjeremy.setOnItemSelectedListener(this);
 
 // Loading spinner data from database
         loadSpinnerData();
@@ -64,10 +67,11 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
                 String label3 = inputLabeljeremy2.getText().toString();
                 String label4 = inputLabeljeremy2.getText().toString();
                 String label5 = inputLabeljeremy2.getText().toString();
+                String label6 = inputLabeljeremy7.getText().toString();
 
                 if (label.trim().length() > 0) {
                     DatabaseHandler db = new DatabaseHandler(getApplicationContext());
-                    db.insertLabel(label, label1, label2, label3, label4, label5);
+                    db.insertLabel(label, label1, label2, label3, label4, label5, label6);
 
 
 // making input filed text to blank
@@ -77,6 +81,7 @@ public class invoerendatajeremy extends AppCompatActivity implements OnItemSelec
                     inputLabeljeremy4.setText("");
                     inputLabeljeremy5.setText("");
                     inputLabeljeremy6.setText("");
+                    inputLabeljeremy7.setText("");
 
 
 // Hiding the keyboard
@@ -111,7 +116,7 @@ Function to load the spinner data from SQLite database
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 // attaching data adapter to spinner
-        spinnerjeremy.setAdapter(dataAdapter);
+//        spinnerjeremy.setAdapter(dataAdapter);
 
     }
 
