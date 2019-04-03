@@ -22,7 +22,7 @@ public class SociaalNetwerkFragment3 extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment());
+                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment1());
                 fr.commit();
 
             }

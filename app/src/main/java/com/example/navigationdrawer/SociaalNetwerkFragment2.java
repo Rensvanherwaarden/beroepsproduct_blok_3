@@ -22,7 +22,7 @@ View view = inflater.inflate(R.layout.fragment_sociaal_netwerk_fragment2,contain
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment());
+                fr.replace(R.id.fragment_container, new SociaalNetwerkFragment1());
                 fr.commit();
 
             }
