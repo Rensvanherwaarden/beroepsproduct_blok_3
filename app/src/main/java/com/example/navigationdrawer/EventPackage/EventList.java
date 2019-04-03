@@ -40,7 +40,7 @@ public class EventList extends AppCompatActivity {
         RensEvent event10 = new RensEvent("beers and barrals ", "12-20-1998", "12-20-1998");
 
         //Add the Person objects to an ArrayList
-        ArrayList<RensEvent> evenenmentenlijst = new ArrayList<>();
+        final ArrayList<RensEvent> evenenmentenlijst = new ArrayList<>();
         evenenmentenlijst.add(event1);
         evenenmentenlijst.add(event2);
         evenenmentenlijst.add(event3);
@@ -59,9 +59,9 @@ public class EventList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(view.getContext(), EventExtraInfo.class);
-                String eventnaam = mListView.getItemAtPosition(position).toString();
-                String eventinfo = mListView.getItemAtPosition(position).toString();
-                String eventdatum = mListView.getItemAtPosition(position).toString();
+                String eventnaam = evenenmentenlijst.get(position).getEvenementNaam();
+                String eventinfo = evenenmentenlijst.get(position).getEvenementBeschrijving();
+                String eventdatum = evenenmentenlijst.get(position).getEvenementDatum();
 
                 i.putExtra("ExtraString1", eventnaam); // Meesturen van naam van een event
                 i.putExtra("ExtraString2", eventinfo); //Meesturen van info van een event

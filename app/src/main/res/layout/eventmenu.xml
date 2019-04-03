@@ -63,16 +63,6 @@
         app:layout_constraintTop_toBottomOf="@+id/rensImageButton2" />
 
     <TextView
-        android:id="@+id/tekst5TextView"
-        android:layout_width="94dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="8dp"
-        android:text="Events Zoeken"
-        app:layout_constraintEnd_toEndOf="@+id/rensImageButton3"
-        app:layout_constraintStart_toStartOf="@+id/rensImageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/rensImageButton3" />
-
-    <TextView
         android:id="@+id/tekst6TextView"
         android:layout_width="116dp"
         android:layout_height="46dp"
