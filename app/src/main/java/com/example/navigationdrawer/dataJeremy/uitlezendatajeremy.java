@@ -13,10 +13,7 @@ public class uitlezendatajeremy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uitlezendatajeremy);
 
-        Bundle extras = getIntent().getExtras();
 
-        TextView textViewnaamjeremy = findViewById(R.id.textViewnaamjeremy);
 
-        textViewnaamjeremy.setText(extras.getString( "Naam"));
     }
 }

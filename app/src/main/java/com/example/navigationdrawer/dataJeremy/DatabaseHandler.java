@@ -16,11 +16,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String COLUMN_NAAM = "name";
     private static final String COLUMN_WOONPLAATS = "woonplaats";
     private static final String COLUMN_GEBOORTEDATUM = "geboortedatum";
-    private static final String COLUMN_INTERESSE1 = "interesse1";
-    private static final String COLUMN_INTERESSE2 = "interesse2";
-    private static final String COLUMN_INTERESSE3 = "interesse3";
+    private static final String COLUMN_INTERESSE = "interesse1";
+    private static final String COLUMN_HOBBY = "interesse2";
+    private static final String COLUMN_EXPERTISE = "interesse3";
     private static final String COlUMN_WACHTWOORD = "wachtwoord";
-    private static final String COlUMN_EXTRA = "extra";
+
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -29,7 +29,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_ITEM_TABLE = "CREATE TABLE " + Cliënten + "(" + COLUMN_ID + " INTEGER PRIMARY KEY," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+","
-                + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 + "," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+")";
+                + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY + "," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +")";
         db.execSQL(CREATE_ITEM_TABLE);
 
     }
@@ -49,9 +49,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(COLUMN_NAAM, label);
         values.put(COLUMN_GEBOORTEDATUM, label1);
         values.put(COLUMN_WOONPLAATS, label2);
-        values.put(COLUMN_INTERESSE1, label3);
-        values.put(COLUMN_INTERESSE2, label4);
-        values.put(COLUMN_INTERESSE3, label5);
+        values.put(COLUMN_INTERESSE, label3);
+        values.put(COLUMN_HOBBY, label4);
+        values.put(COLUMN_EXPERTISE, label5);
         values.put(COlUMN_WACHTWOORD, label6);
 
 
@@ -63,7 +63,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public List getAllLabels() {
         List listjeremy = new ArrayList();
-        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+ COlUMN_EXTRA +" FROM " + Cliënten+ ""  ;
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten+ ""  ;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
         if (cursor.moveToFirst()) {
@@ -79,7 +79,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public List getcolumnwoonplaats() {
         List listjeremy = new ArrayList();
-        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
         if (cursor.moveToFirst()) {
@@ -95,7 +95,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public List getcolumngeboortedatum() {
         List listjeremy = new ArrayList();
-        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
         if (cursor.moveToFirst()) {
@@ -111,7 +111,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public List getcolumninteresse1() {
         List listjeremy = new ArrayList();
-        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
         if (cursor.moveToFirst()) {
@@ -127,7 +127,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public List getcolumninteresse2() {
         List listjeremy = new ArrayList();
-        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
         if (cursor.moveToFirst()) {
@@ -143,7 +143,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public List getcolumninteresse3() {
         List listjeremy = new ArrayList();
-        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
         if (cursor.moveToFirst()) {
@@ -159,7 +159,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public List getcolumnwachtwoord() {
         List listjeremy = new ArrayList();
-        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE1 + "," + COLUMN_INTERESSE2 +"," + COLUMN_INTERESSE3 + "," + COlUMN_WACHTWOORD +","+COlUMN_EXTRA+" FROM " + Cliënten;
+        String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
         if (cursor.moveToFirst()) {
