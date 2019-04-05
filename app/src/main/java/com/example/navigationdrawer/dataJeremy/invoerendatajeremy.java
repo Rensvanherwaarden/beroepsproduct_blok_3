@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.navigationdrawer.R;
 
@@ -40,8 +41,6 @@ public class invoerendatajeremy extends AppCompatActivity  {
         inputLabeljeremy5 = findViewById(R.id.editTextinteresse2jeremy);
         inputLabeljeremy6 = findViewById(R.id.editTextinteresse3jeremy);
         inputLabeljeremy7 = findViewById(R.id.editTextwachtwoordjeremy);
-
-
 
 
 

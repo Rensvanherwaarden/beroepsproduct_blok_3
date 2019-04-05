@@ -35,17 +35,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         //begin pagina van de applicatie
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PersoonFragment()).commit();
+        String strNaam = getIntent().getStringExtra("naam");
+        Bundle args = new Bundle();
+        args.putString("naam",strNaam);
+        PersoonFragment pf = new PersoonFragment();
+        pf.setArguments(args);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, pf).commit();
         navigationView.setCheckedItem(R.id.nav_persoon);
     }
 
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
         switch (menuItem.getItemId()) {
             // voor menu items die geselecteerd blijven als je er op klikt
-
             case R.id.nav_persoon:
+
+
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PersoonFragment()).commit();
                 break;
             case R.id.nav_agenda:
@@ -53,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_sociaalnetwerk:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SociaalNetwerkFragment1()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new com.example.navigationdrawer.serviViews.SociaalNetwerkFragment1()).commit();
                 break;
 
 // voor menu items die enkel  iets moeten laten zien

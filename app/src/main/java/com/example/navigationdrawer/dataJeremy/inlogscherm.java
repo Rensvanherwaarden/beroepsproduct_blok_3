@@ -3,6 +3,8 @@ package com.example.navigationdrawer.dataJeremy;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import java.util.ArrayList;
 import java.util.List;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,15 +25,12 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
     Spinner spinnerinlog;
     Button buttoninlogjeremy;
     Button buttonregistreren;
-    EditText EditTextinlog;
-
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inlogscherm);
+        final ArrayList<modeljeremy> array1 = new ArrayList<>();
 
         spinnerinlog = findViewById(R.id.spinnerinlog);
         buttoninlogjeremy = findViewById(R.id.buttoninlogjeremy);
@@ -48,9 +47,15 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
             @Override
             public void onClick(View arg0) {
 
-// geef data door dat je bij weergave een overzicht krijgt..
+        String welkom = ((Spinner)findViewById(R.id.spinnerinlog)).getSelectedItem().toString();
+        modeljeremy model = new modeljeremy();
+        model.setNaam(welkom);
+        array1.add(model);
 
-                Intent intent = new Intent(arg0.getContext(),MainActivity.class);
+        Intent intent = new Intent(arg0.getContext(),MainActivity.class);
+                intent.putExtra("naam",model.getNaam());
+                //startActivityForResult(intent,1);
+
                 startActivity(intent);
 
             }
