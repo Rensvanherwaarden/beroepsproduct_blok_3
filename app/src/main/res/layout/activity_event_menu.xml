@@ -40,17 +40,17 @@
         app:layout_constraintTop_toBottomOf="@+id/tekst1TextView" />
 
     <TextView
-        android:id="@+id/textbutton1"
+        android:id="@+id/RensTextmenu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Event Agenda"
+        android:text="Evenement Agenda"
         app:layout_constraintEnd_toEndOf="@+id/rensImageButton1"
         app:layout_constraintStart_toStartOf="@+id/rensImageButton1"
         app:layout_constraintTop_toBottomOf="@+id/rensImageButton1" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/RensTextmenu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -59,16 +59,6 @@
         app:layout_constraintEnd_toEndOf="@+id/rensImageButton2"
         app:layout_constraintStart_toStartOf="@+id/rensImageButton2"
         app:layout_constraintTop_toBottomOf="@+id/rensImageButton2" />
-
-    <TextView
-        android:id="@+id/tekst6TextView"
-        android:layout_width="116dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="8dp"
-        android:text="-"
-        app:layout_constraintEnd_toEndOf="@+id/rensImageButton4"
-        app:layout_constraintStart_toStartOf="@+id/rensImageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/rensImageButton4" />
 
     <ImageButton
         android:id="@+id/rensImageButton1"
@@ -105,39 +95,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3"
         app:srcCompat="@drawable/search_image" />
-
-    <ImageButton
-        android:id="@+id/rensImageButton3"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
-
-    <ImageButton
-        android:id="@+id/rensImageButton4"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
 
 </android.support.constraint.ConstraintLayout>

@@ -24,5 +24,7 @@
 
     <string name="drawer_event_kalender"> Evenementen kalender</string>
     <string name="drawer_event_beschikbaar">Beschikbare events</string>
+    <string name="drawer_event_Titel">Titel events</string>
+
 
 </resources>

@@ -19,8 +19,7 @@ public class EventMenu extends Fragment {
         View view = inflater.inflate(R.layout.activity_event_menu, container, false);
         ImageButton rensImageButton1 = (ImageButton) view.findViewById(R.id.rensImageButton1);
         ImageButton rensImageButton2 = (ImageButton) view.findViewById(R.id.rensImageButton2);
-        ImageButton rensImageButton3 = (ImageButton) view.findViewById(R.id.rensImageButton3);
-        ImageButton rensImageButton4 = (ImageButton) view.findViewById(R.id.rensImageButton4);
+
 
         rensImageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,16 +34,7 @@ public class EventMenu extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(v.getContext(), EventList.class);
                 startActivity(i);
-
-            }
-        });
-        rensImageButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),EventShowDate.class);
-                startActivity(i);
-
-            }
+               }
         });
 
         return view;
