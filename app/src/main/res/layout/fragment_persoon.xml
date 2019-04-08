@@ -78,7 +78,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars[0]" />
+        tools:srcCompat="@tools:sample/avatars[0]"
+        android:contentDescription="@string/picture1" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -92,7 +93,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars[1]" />
+        tools:srcCompat="@tools:sample/avatars[1]"
+        android:contentDescription="@string/todo" />
 
 
 </android.support.constraint.ConstraintLayout>

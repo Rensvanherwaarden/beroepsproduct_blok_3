@@ -20,5 +20,8 @@
 
     <string name="drawer_event_kalender"> Evenementen kalender</string>
     <string name="drawer_event_beschikbaar">Beschikbare events</string>
+    <string name="todo">TODO</string>
+    <string name="picture1">TODO</string>
+
 
 </resources>
