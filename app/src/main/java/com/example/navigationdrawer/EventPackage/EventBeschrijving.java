@@ -7,14 +7,14 @@ import android.widget.TextView;
 
 import com.example.navigationdrawer.R;
 
-public class EventExtraInfo extends AppCompatActivity {
+public class EventBeschrijving extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_extra_info);
         Intent i = getIntent();
-        // Als de intent die meegestuurd word een Extra heeft worden textview 4,10 & 12 aangepast naar de meegestuurde data.
+
         if (i.hasExtra("ExtraString1")) {
             TextView naam = (TextView) findViewById(R.id.Rensnaaminvul);
             TextView info = (TextView) findViewById(R.id.Rensinfoinvul);

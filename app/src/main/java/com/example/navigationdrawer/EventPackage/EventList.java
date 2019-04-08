@@ -7,14 +7,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.navigationdrawer.R;
 import com.example.navigationdrawer.modelRens.RensEvent;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class EventList extends AppCompatActivity {
 
@@ -71,7 +69,7 @@ public class EventList extends AppCompatActivity {
         mListView.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(view.getContext(), EventExtraInfo.class);
+                Intent i = new Intent(view.getContext(), EventBeschrijving.class);
                 String eventnaam = evenenmentenlijst.get(position).getEvenementNaam();
                 String eventinfo = evenenmentenlijst.get(position).getEvenementBeschrijving();
                 String eventdatum = evenenmentenlijst.get(position).getEvenementDatum();
