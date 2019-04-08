@@ -15,6 +15,8 @@ import android.view.MenuItem;
 
 import android.widget.Toast;
 
+import com.example.navigationdrawer.serviViews.SociaalNetwerkFragment1;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;

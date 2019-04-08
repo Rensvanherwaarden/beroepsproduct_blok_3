@@ -1,10 +1,11 @@
-package com.example.navigationdrawer;
+package com.example.navigationdrawer.serviViews;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.navigationdrawer.R;
 import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
 
 import org.w3c.dom.Text;

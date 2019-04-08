@@ -1,7 +1,7 @@
 package com.example.navigationdrawer.serviModels;
 
-public class serviQuizvragen {
-    public String Quizvraag;
+public class serviQuizvragen extends Quizvraag{
+
     public String Antwoordoptie1;
     public String Antwoordoptie2;
     public String Antwoordoptie3;
