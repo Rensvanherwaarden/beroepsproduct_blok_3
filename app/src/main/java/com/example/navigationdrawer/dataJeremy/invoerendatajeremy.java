@@ -55,12 +55,12 @@ public class invoerendatajeremy extends AppCompatActivity  {
                 String label4 = inputLabeljeremy5.getText().toString();
                 String label5 = inputLabeljeremy6.getText().toString();
                 String label6 = inputLabeljeremy7.getText().toString();
-
+// Hier wordt elke string die ingevuld is in de tekstvakken aan de database toegevoegd.
                 if (label.trim().length() > 0) {
                     DatabaseHandler db = new DatabaseHandler(getApplicationContext());
                     db.insertLabel(label, label1, label2, label3, label4, label5, label6);
 
-
+// via de labels worden de strings aan de database meegegeven.
                     inputLabeljeremy.setText("");
                     inputLabeljeremy2.setText("");
                     inputLabeljeremy3.setText("");

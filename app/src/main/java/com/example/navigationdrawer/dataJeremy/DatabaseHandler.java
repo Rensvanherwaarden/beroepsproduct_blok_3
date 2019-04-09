@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
+    // Hier worden alle colums van de table benoemt:
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "Cliënten";
     private static final String Cliënten = "labels";
@@ -25,7 +26,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-
+// Hier wordt de table die gebruikt wordt binnen de applicatie aangemaakt:
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_ITEM_TABLE = "CREATE TABLE " + Cliënten + "(" + COLUMN_ID + " INTEGER PRIMARY KEY," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+","
@@ -42,7 +43,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-
+// de labels die hier worden aangemaakt worden gebruikt om de strings uit andere activities aan de database toe te voegen:
     public void insertLabel(String label, String label1, String label2, String label3, String label4, String label5, String label6){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -60,7 +61,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
-
+//
     public List getAllLabels() {
         List listjeremy = new ArrayList();
         String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten+ ""  ;
@@ -68,7 +69,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery(selectQuery, null);//selectQuery,selectedArguments
         if (cursor.moveToFirst()) {
             do {
-                listjeremy.add(cursor.getString(1));//adding 2nd column data
+                listjeremy.add(cursor.getString(1));//Hierbinnen wordt aangegeven welke column wordt uitgelezen van de database.
             } while (cursor.moveToNext());
         }
         cursor.close();
@@ -76,7 +77,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return listjeremy;
     }
 
-
+// Elke public list hieronder leest een ander gedeelte van de database uit, doormiddel van queries:
     public List getcolumnwoonplaats() {
         List listjeremy = new ArrayList();
         String selectQuery = "SELECT " + COLUMN_ID + " ," + COLUMN_NAAM +","+COLUMN_WOONPLAATS+", " + COLUMN_GEBOORTEDATUM + "," + COLUMN_INTERESSE + "," + COLUMN_HOBBY +"," + COLUMN_EXPERTISE + "," + COlUMN_WACHTWOORD +" FROM " + Cliënten;

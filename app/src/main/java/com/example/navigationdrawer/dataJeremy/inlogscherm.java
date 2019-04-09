@@ -41,7 +41,7 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
 
 // Laad de spinner met data van de database
         loadSpinnerData();
-
+// De button hieronder leest de gekozen string uit van de spinner en plaats deze op het begingscherm persoon_fragement via de mainactivity.
         buttoninlogjeremy.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -54,13 +54,13 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
 
         Intent intent = new Intent(arg0.getContext(),MainActivity.class);
                 intent.putExtra("naam",model.getNaam());
-                //startActivityForResult(intent,1);
+
 
                 startActivity(intent);
 
             }
         });
-
+// Deze button gaat naar de activity invoerendatajeremy
         buttonregistreren.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,13 +76,11 @@ public class inlogscherm extends AppCompatActivity implements OnItemSelectedList
         DatabaseHandler db = new DatabaseHandler(getApplicationContext());
         List label3 = db.getAllLabels();
 
-// Creating adapter for spinner
+// Creeër een adapter voor de spinner
         ArrayAdapter dataAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, label3);
-
-// Drop down layout style - list view with radio button
+// gebruik de Drop down layout style
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-// attaching data adapter to spinner
+// data adapter aan spinner toevoegen
         spinnerinlog.setAdapter(dataAdapter);
 
     }
