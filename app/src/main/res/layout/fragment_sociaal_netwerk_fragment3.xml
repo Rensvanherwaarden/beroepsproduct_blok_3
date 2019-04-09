@@ -5,7 +5,7 @@
     android:id="@+id/ConstraintLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".serviViews.SociaalNetwerkFragment3">
+    tools:context=".serviActivities.SociaalNetwerkFragment3">
 
     <TextView
         android:id="@+id/tekst1TextView"

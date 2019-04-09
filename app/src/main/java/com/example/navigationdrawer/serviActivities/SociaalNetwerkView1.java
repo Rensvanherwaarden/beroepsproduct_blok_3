@@ -1,4 +1,4 @@
-package com.example.navigationdrawer.serviViews;
+package com.example.navigationdrawer.serviActivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

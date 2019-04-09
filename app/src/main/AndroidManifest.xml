@@ -10,10 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".serviViews.SociaalNetwerkView4"></activity>
-        <activity android:name=".serviViews.SociaalNetwerkView3" />
-        <activity android:name=".serviViews.SociaalNetwerkView2" />
-        <activity android:name=".serviViews.SociaalNetwerkView1" />
+        <activity android:name=".serviActivities.SociaalNetwerkView4"></activity>
+        <activity android:name=".serviActivities.SociaalNetwerkView3" />
+        <activity android:name=".serviActivities.SociaalNetwerkView2" />
+        <activity android:name=".serviActivities.SociaalNetwerkView1" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

@@ -4,6 +4,7 @@ public class SNID {
 
     String SNID;
 
+
     public String getSNID() {
         return SNID;
     }

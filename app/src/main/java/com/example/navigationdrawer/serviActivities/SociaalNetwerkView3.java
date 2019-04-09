@@ -1,16 +1,23 @@
-package com.example.navigationdrawer.serviViews;
+package com.example.navigationdrawer.serviActivities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.navigationdrawer.R;
 import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
 
-import org.w3c.dom.Text;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class SociaalNetwerkView4 extends AppCompatActivity {
+public class SociaalNetwerkView3 extends AppCompatActivity {
+
     serviSociaalNetwerk sn1 = new serviSociaalNetwerk("1", "De Biervaten", "Biertap", "Het sociale netwerk 'De Biervaten' krijg jij voorgesteld omdat je bij vraag 1 'Biertap' hebt ingevuld. ");
     serviSociaalNetwerk sn2 = new serviSociaalNetwerk("2", "De Dansers", "Dansvloer", "Het sociale netwerk 'De Dansers' krijg jij voorgesteld omdat je bij vraag 1 'Dansvloer' hebt ingevuld.");
     serviSociaalNetwerk sn3 = new serviSociaalNetwerk("3", "De Toiletbezoekers", "WC", "Het sociale netwerk 'De Toiletbezoekers' krijg jij voorgesteld omdat je bij vraag 1 'WC' hebt ingevuld.");
@@ -28,57 +35,54 @@ public class SociaalNetwerkView4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_sociaal_netwerk_4);
-        TextView tekst13TextView = (TextView) findViewById(R.id.tekst13TextView);
-        TextView tekst14TextView = (TextView) findViewById(R.id.tekst14TextView);
-
+        setContentView(R.layout.view_sociaal_netwerk_3);
         Intent i = getIntent();
-
         // Als de intent die meegestuurd word een Extra heeft worden textview 4,10 & 12 aangepast naar de meegestuurde data.
-        if (i.hasExtra("ExtraStringInfooversn")) {
+        if (i.hasExtra("ExtraStringUitkomstSN")) {
+            TextView tekst2TextView = (TextView) findViewById(R.id.sndetailTextView1);
             // Textview4 word veranderd naar welke naam er is ingevuld bij de MainActivity in spinner2
-            tekst13TextView.setText(i.getStringExtra("ExtraStringInfooversn"));
-        }
+            tekst2TextView.setText(i.getStringExtra("ExtraStringUitkomstSN"));
 
-        if (tekst13TextView.getText().toString().contains(sn1.getSNNaam())) {
-            tekst14TextView.setText(sn1.getSNBeschrijving());
         }
-        if (tekst13TextView.getText().toString().contains(sn2.getSNNaam())) {
-            tekst14TextView.setText(sn2.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn3.getSNNaam())) {
-            tekst14TextView.setText(sn3.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn4.getSNNaam())) {
-            tekst14TextView.setText(sn4.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn5.getSNNaam())) {
-            tekst14TextView.setText(sn5.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn6.getSNNaam())) {
-            tekst14TextView.setText(sn6.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn7.getSNNaam())) {
-            tekst14TextView.setText(sn7.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn8.getSNNaam())) {
-            tekst14TextView.setText(sn8.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn9.getSNNaam())) {
-            tekst14TextView.setText(sn9.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn10.getSNNaam())) {
-            tekst14TextView.setText(sn10.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn11.getSNNaam())) {
-            tekst14TextView.setText(sn11.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn12.getSNNaam())) {
-            tekst14TextView.setText(sn12.getSNBeschrijving());
-        }
-        if (tekst13TextView.getText().toString().contains(sn13.getSNNaam())) {
-            tekst14TextView.setText(sn13.getSNBeschrijving());
-        }
+        final Spinner serviSpinner11 = (Spinner) findViewById(R.id.serviSpinner11);
+        // String Array voor spinner2
+        String[] socialenetwerkenlijst = new String[]{
+                sn1.getSNNaam(),
+                sn2.getSNNaam(),
+                sn3.getSNNaam(),
+                sn4.getSNNaam(),
+                sn5.getSNNaam(),
+                sn6.getSNNaam(),
+                sn7.getSNNaam(),
+                sn8.getSNNaam(),
+                sn9.getSNNaam(),
+                sn10.getSNNaam(),
+                sn11.getSNNaam(),
+                sn12.getSNNaam(),
+                sn13.getSNNaam()
+
+        };
+
+        final List<String> sociaalnetwerklijst = new ArrayList<>(Arrays.asList(socialenetwerkenlijst));
+
+        // ArrayAdapter spinner2
+        final ArrayAdapter<String> spinner11ArrayAdapter = new ArrayAdapter<String>(
+                this, R.layout.support_simple_spinner_dropdown_item, sociaalnetwerklijst);
+        spinner11ArrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        serviSpinner11.setAdapter(spinner11ArrayAdapter);
+
+
+        Button serviButton12 = (Button) findViewById(R.id.serviButton12);
+        serviButton12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), SociaalNetwerkView4.class);
+                String infooversn = serviSpinner11.getSelectedItem().toString();
+                i.putExtra("ExtraStringInfooversn", infooversn); // Meesturen van geselecteerde sociaal netwerk
+                startActivity(i);
+
+            }
+        });
 
     }
 }
