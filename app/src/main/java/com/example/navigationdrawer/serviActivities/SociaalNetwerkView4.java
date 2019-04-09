@@ -1,13 +1,12 @@
-package com.example.navigationdrawer;
+package com.example.navigationdrawer.serviActivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.navigationdrawer.R;
 import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
-
-import org.w3c.dom.Text;
 
 public class SociaalNetwerkView4 extends AppCompatActivity {
     serviSociaalNetwerk sn1 = new serviSociaalNetwerk("1", "De Biervaten", "Biertap", "Het sociale netwerk 'De Biervaten' krijg jij voorgesteld omdat je bij vraag 1 'Biertap' hebt ingevuld. ");

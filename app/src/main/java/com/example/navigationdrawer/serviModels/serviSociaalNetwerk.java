@@ -1,15 +1,12 @@
 package com.example.navigationdrawer.serviModels;
 
-public class serviSociaalNetwerk {
-    String SNID;
+public class serviSociaalNetwerk extends SNID{
     String SNNaam;
     String SNVoorwaarde;
     String SNBeschrijving;
 
     /**
      * De constructor wordt gebruikt om object te maken.
-     *
-     * @param SNID            : De ID van het sociale netwerk.
      * @param SNNaam:         De naam van het betreffende sociale netwerk
      * @param SNVoorwaarde:   De voorwaarde die moet staan om voorgesteld te worden
      * @param SNBeschrijving: De beschrijving van het sociale netwerk

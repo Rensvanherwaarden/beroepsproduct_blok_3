@@ -1,4 +1,4 @@
-package com.example.navigationdrawer;
+package com.example.navigationdrawer.serviActivities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.navigationdrawer.R;
 import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
 
 import java.util.ArrayList;

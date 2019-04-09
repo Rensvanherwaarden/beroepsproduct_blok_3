@@ -1,4 +1,4 @@
-package com.example.navigationdrawer;
+package com.example.navigationdrawer.serviActivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.navigationdrawer.R;
 import com.example.navigationdrawer.serviModels.serviSociaalNetwerk;
 
 public class SociaalNetwerkView2 extends AppCompatActivity {

@@ -1,20 +1,11 @@
 package com.example.navigationdrawer.serviModels;
 
-public class serviInschrijfOpties {
-    public String Inschrijfoptie;
+public class serviInschrijfOpties extends Inschrijfoptie {
     public String OptieBeschrijving;
 
-    public serviInschrijfOpties(String inschrijfoptie, String optieBeschrijving) {
-        Inschrijfoptie = inschrijfoptie;
-        OptieBeschrijving = optieBeschrijving;
-    }
-
-    public String getInschrijfoptie() {
-        return Inschrijfoptie;
-    }
-
-    public void setInschrijfoptie(String inschrijfoptie) {
-        Inschrijfoptie = inschrijfoptie;
+    public serviInschrijfOpties(String Inschrijfoptie , String optieBeschrijving) {
+        this.OptieBeschrijving = optieBeschrijving;
+        this.Inschrijfoptie = Inschrijfoptie;
     }
 
     public String getOptieBeschrijving() {

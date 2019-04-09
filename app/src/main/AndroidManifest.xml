@@ -10,14 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".serviActivities.SociaalNetwerkView4"></activity>
+        <activity android:name=".serviActivities.SociaalNetwerkView3" />
+        <activity android:name=".serviActivities.SociaalNetwerkView2" />
+        <activity android:name=".serviActivities.SociaalNetwerkView1" />
+
         <activity android:name=".dataJeremy.uitlezendatajeremy"></activity>
         <activity android:name=".dataJeremy.inlogscherm" />
         <activity android:name=".dataJeremy.invoerendatajeremy" />
 
-        <activity android:name=".SociaalNetwerkView4"></activity>
-        <activity android:name=".SociaalNetwerkView3" />
-        <activity android:name=".SociaalNetwerkView2" />
-        <activity android:name=".SociaalNetwerkView1" />
 
         <activity
             android:name=".MainActivity"
